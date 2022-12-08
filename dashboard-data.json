@@ -1,0 +1,216 @@
+{
+  "servers": [
+    {
+      "id": 1,
+      "totalServers": 50,
+      "downServers": 2,
+      "problems": 3
+    }
+  ],
+  "problems": [
+    {
+      "id": 1,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": true,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 2,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": true,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 3,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": true,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 4,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": true,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 5,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": true,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 6,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": false,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 7,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": false,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 8,
+      "startTime": "2022-09-14T00:00:00-03:00",
+      "resolvedTime": "",
+      "status": true,
+      "host": "MSSQL server 2019",
+      "problemDescription": "MSSQL: Service is unavailable",
+      "duration": "2022-09-14T00:00:00-03:00"
+    }
+  ],
+  "cpu-memory-usage": [
+    {
+      "id": 1,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 2,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 3,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 4,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 5,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 6,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    },
+    {
+      "id": 7,
+      "host": "DATELO.MOT.VEYE",
+      "usageCpuPercent": 86.97,
+      "usageMemoryPercent": 85.464,
+      "duration": "2022-09-14T00:00:00-03:00"
+    }
+  ],
+  "disk-partition-usage": [
+    {
+      "id": 1,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    },
+    {
+      "id": 2,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    },
+    {
+      "id": 3,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    },
+    {
+      "id": 4,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    },
+    {
+      "id": 5,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    },
+    {
+      "id": 6,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    },
+    {
+      "id": 7,
+      "estimatedDaysToFillPartition": 78,
+      "usagePartitionPercent": 91.89
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 7,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "high"
+    }
+  ]
+}
