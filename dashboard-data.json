@@ -1,12 +1,10 @@
 {
-  "servers": [
-    {
-      "id": 1,
-      "totalServers": 50,
-      "downServers": 2,
-      "problems": 3
-    }
-  ],
+  "servers": {
+    "id": 1,
+    "totalServers": 50,
+    "downServers": 2,
+    "problems": 3
+  },
   "problems": [
     {
       "id": 1,

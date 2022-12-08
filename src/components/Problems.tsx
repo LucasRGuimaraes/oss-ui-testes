@@ -1,20 +1,9 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Typography,
-} from "@mui/material";
-import { DataGrid, GridActionsCellItem } from "@mui/x-data-grid";
-import moment from "moment";
+import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
+import { DataGrid, GridActionsCellItem, GridColDef, GridRenderCellParams, GridRowParams, GridActionsColDef } from "@mui/x-data-grid";
 import { useQuery } from "react-query";
-import {
-  FiEdit,
-  FiTrash2,
-  FiAlertTriangle,
-  FiCheckSquare,
-} from "react-icons/fi";
+import { FiEdit, FiTrash2, FiAlertTriangle, FiCheckSquare } from "react-icons/fi";
 import { api } from "../services/api";
+import moment from "moment";
 
 interface ProblemData {
   startTime: Date;
@@ -30,19 +19,19 @@ export function Problems() {
   const { data } = useQuery("problems", fetchData);
 
   async function fetchData() {
-    const data = (await api.get("/problems")).data;
-    const formattedDate = data.map((item: ProblemData) => {
+    const data = (await api.get<ProblemData[]>("/problems")).data;
+    const formattedDate = data.map((item) => {
       return {
         ...item,
         startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
-        resolvedTime: moment(item.resolvedTime).format("DD/MM HH:mm:ss"),
-        duration: moment(item.duration).format("DD/MM HH:mm:ss"),
+        resolvedTime: item.resolvedTime && moment(item.resolvedTime).format("DD/MM HH:mm:ss"),
+        duration: moment(item.duration).fromNow(true),
       };
     });
     return formattedDate;
   }
 
-  const columns = [
+  const columns: Array<GridColDef | GridActionsColDef> = [
     {
       field: "startTime",
       headerName: "START TIME",
@@ -57,14 +46,14 @@ export function Problems() {
       field: "status",
       headerName: "STATUS",
       flex: 1,
-      renderCell: (params: any) => {
-        return params.value === true ? (
+      renderCell: (params: GridRenderCellParams) => {
+        return params.value ? (
           <Typography color="error">
             <FiAlertTriangle /> PROBLEM
           </Typography>
         ) : (
           <Typography color="primary">
-            <FiCheckSquare /> Resolved
+            <FiCheckSquare /> RESOLVED
           </Typography>
         );
       },
@@ -89,7 +78,7 @@ export function Problems() {
       headerName: "ACTIONS",
       type: "actions",
       flex: 1,
-      getActions: (params: any) => [
+      getActions: (params: GridRowParams) => [
         // @ts-ignore
         <GridActionsCellItem
           icon={<FiEdit color="#368F54" />}
@@ -126,7 +115,6 @@ export function Problems() {
           getRowId={() => Math.random()}
           pageSize={5}
           autoHeight
-          experimentalFeatures={{ newEditingApi: true }}
         />
       </CardContent>
     </Card>
