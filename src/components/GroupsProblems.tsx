@@ -1,8 +1,8 @@
-import { Card, CardContent, CardHeader, Divider } from "@mui/material";
+import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { DataGrid, GridCell, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { api } from "../services/api"
 
 export function GroupsProblems() {
@@ -17,6 +17,17 @@ export function GroupsProblems() {
       field: "priority",
       headerName: "Priority",
       flex: 1,
+      renderCell: (params) => {
+        return params.value == "high" ?(
+          <Typography sx={{"color": "red"}}>
+            {params.value}
+          </Typography>
+        ) : (
+          <Typography sx={{"color": "red", "borderColor": "red"}}>
+            {params.value}
+          </Typography>
+        );
+      }   
     },
     {
       field: "hostQuantity",
