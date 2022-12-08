@@ -6,6 +6,8 @@ import { theme } from "../theme";
 import "../theme/global.css";
 import "typeface-roboto";
 import Head from "next/head";
+import { QueryClientProvider } from "react-query";
+import { queryClient } from "../services/queryClient";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -22,10 +24,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#111827" />
         <title>OSS Dashboard TESTE</title>
       </Head>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </QueryClientProvider>
     </>
   );
 }
