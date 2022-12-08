@@ -8,21 +8,18 @@ const columns: GridColDef[] = [
   {
     field: "name",
     headerName: "Name",
-    width: 150,
-    editable: true,
+    flex: 1,
   },
   {
     field: "severity",
     headerName: "Severity",
-    width: 150,
-    editable: true,
+    flex: 1,
   },
   {
     field: "hostsQuantity",
     headerName: "Hosts Quantity",
     type: "number",
-    width: 110,
-    editable: true,
+    flex: 1,
   },
 ];
 
