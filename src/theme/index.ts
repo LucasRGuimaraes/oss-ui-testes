@@ -1,15 +1,15 @@
 import { createTheme } from "@mui/material";
 
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
   interface Palette {
-    white: Palette['primary'];
+    white: Palette["primary"];
   }
   interface PaletteOptions {
-    white: PaletteOptions['primary'];
+    white: PaletteOptions["primary"];
   }
 }
 
-declare module '@mui/material/Button' {
+declare module "@mui/material/Button" {
   interface ButtonPropsColorOverrides {
     white: true;
   }
@@ -62,6 +62,15 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           flex: 1,
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
         },
       },
     },

@@ -9,7 +9,7 @@
     {
       "id": 1,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": true,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -19,7 +19,7 @@
     {
       "id": 2,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": true,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -29,7 +29,7 @@
     {
       "id": 3,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "2022-09-17T00:00:00-03:00",
+      "clearTime": "2022-09-17T00:00:00-03:00",
       "status": false,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": true,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -49,7 +49,7 @@
     {
       "id": 5,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": true,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -59,7 +59,7 @@
     {
       "id": 6,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": false,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -69,7 +69,7 @@
     {
       "id": 7,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": false,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",
@@ -79,7 +79,7 @@
     {
       "id": 8,
       "startTime": "2022-09-14T00:00:00-03:00",
-      "resolvedTime": "",
+      "clearTime": "",
       "status": true,
       "host": "MSSQL server 2019",
       "problemDescription": "MSSQL: Service is unavailable",

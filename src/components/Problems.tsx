@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
 import { DataGrid, GridActionsCellItem, GridColDef, GridRenderCellParams, GridRowParams, GridActionsColDef } from "@mui/x-data-grid";
 import { useQuery } from "react-query";
 import { FiEdit, FiTrash2, FiAlertTriangle, FiCheckSquare } from "react-icons/fi";
@@ -7,7 +7,7 @@ import moment from "moment";
 
 interface ProblemData {
   startTime: Date;
-  resolvedTime?: Date;
+  clearTime?: Date;
   status: Boolean;
   host: String;
   problemDescription: String;
@@ -16,7 +16,7 @@ interface ProblemData {
 }
 
 export function Problems() {
-  const { data } = useQuery("problems", fetchData);
+  const { data, isFetching, isError } = useQuery("problems", fetchData);
 
   async function fetchData() {
     const data = (await api.get<ProblemData[]>("/problems")).data;
@@ -24,7 +24,7 @@ export function Problems() {
       return {
         ...item,
         startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
-        resolvedTime: item.resolvedTime && moment(item.resolvedTime).format("DD/MM HH:mm:ss"),
+        clearTime: item.clearTime && moment(item.clearTime).format("DD/MM HH:mm:ss"),
         duration: moment(item.duration).fromNow(true),
       };
     });
@@ -38,8 +38,8 @@ export function Problems() {
       flex: 1,
     },
     {
-      field: "resolvedTime",
-      headerName: "RESOLVED TIME",
+      field: "clearTime",
+      headerName: "CLEAR TIME",
       flex: 1,
     },
     {
@@ -53,7 +53,7 @@ export function Problems() {
           </Typography>
         ) : (
           <Typography color="primary">
-            <FiCheckSquare /> RESOLVED
+            <FiCheckSquare /> CLEAR
           </Typography>
         );
       },
@@ -66,7 +66,7 @@ export function Problems() {
     {
       field: "problemDescription",
       headerName: "PROBLEM DESCRIPTION",
-      flex: 1,
+      flex: 3,
     },
     {
       field: "duration",
@@ -81,21 +81,21 @@ export function Problems() {
       getActions: (params: GridRowParams) => [
         // @ts-ignore
         <GridActionsCellItem
-          icon={<FiEdit color="#368F54" />}
+          key={1}
+          icon={<FiEdit color="green" />}
           label="Edit"
           onClick={() => {
             console.log("oi");
           }}
-          showInMenu
         />,
         // @ts-ignore
         <GridActionsCellItem
-          icon={<FiTrash2 color="#368F54" />}
+          key={2}
+          icon={<FiTrash2 color="green" />}
           label="Delete"
           onClick={() => {
             console.log("oi");
           }}
-          showInMenu
         />,
       ],
     },
@@ -106,16 +106,32 @@ export function Problems() {
       <CardHeader title="Problems" />
       <Divider />
       <CardContent>
-        <DataGrid
-          rows={data || []}
-          columns={columns}
-          disableColumnMenu
-          disableSelectionOnClick
-          disableDensitySelector
-          getRowId={() => Math.random()}
-          pageSize={5}
-          autoHeight
-        />
+        {isError || isFetching || !data || !data.length ? (
+          <Box
+            sx={{
+              p: 10,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {isError && <Typography>Unable to fetch data, please try again</Typography>}
+            {isFetching && <Typography>Fetching data...</Typography>}
+            {!isFetching && !isError && (!data || !data.length) && <Typography>No entries found!</Typography>}
+          </Box>
+        ) : (
+          <DataGrid
+            sx={{ height: 346, width: "100%" }}
+            getRowId={() => Math.random()}
+            density="compact"
+            disableColumnMenu
+            disableSelectionOnClick
+            disableDensitySelector
+            pageSize={10}
+            columns={columns}
+            rows={data}
+          />
+        )}
       </CardContent>
     </Card>
   );
