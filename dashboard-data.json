@@ -140,83 +140,1427 @@
   ],
   "disk-partition-usage": [
     {
-      "id": 1,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
+      "date": "2022-09-18T00:00:00-03:00",
+      "ateCinquenta": 15055,
+      "ateSetentaECinco": 556783,
+      "ateNoventa": 84711,
+      "ateCem": 50000
     },
     {
-      "id": 2,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
+      "date": "2022-09-18T00:15:00-03:00",
+      "ateCinquenta": 15219,
+      "ateSetentaECinco": 553830,
+      "ateNoventa": 84328,
+      "ateCem": 50000
     },
     {
-      "id": 3,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
+      "date": "2022-09-18T00:30:00-03:00",
+      "ateCinquenta": 15066,
+      "ateSetentaECinco": 552183,
+      "ateNoventa": 83702,
+      "ateCem": 50000
     },
     {
-      "id": 4,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
+      "date": "2022-09-18T00:45:00-03:00",
+      "ateCinquenta": 14968,
+      "ateSetentaECinco": 550058,
+      "ateNoventa": 83457,
+      "ateCem": 50000
     },
     {
-      "id": 5,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
+      "date": "2022-09-18T01:00:00-03:00",
+      "ateCinquenta": 14874,
+      "ateSetentaECinco": 548761,
+      "ateNoventa": 83212,
+      "ateCem": 50000
     },
     {
-      "id": 6,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
+      "date": "2022-09-18T01:15:00-03:00",
+      "ateCinquenta": 14857,
+      "ateSetentaECinco": 545533,
+      "ateNoventa": 82833,
+      "ateCem": 50000
     },
     {
-      "id": 7,
-      "estimatedDaysToFillPartition": 78,
-      "usagePartitionPercent": 91.89
-    }
-  ],
-  "groups": [
-    {
-      "id": 1,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T01:30:00-03:00",
+      "ateCinquenta": 14745,
+      "ateSetentaECinco": 543865,
+      "ateNoventa": 82616,
+      "ateCem": 50000
     },
     {
-      "id": 2,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T01:45:00-03:00",
+      "ateCinquenta": 14703,
+      "ateSetentaECinco": 542911,
+      "ateNoventa": 82438,
+      "ateCem": 50000
     },
     {
-      "id": 3,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T02:00:00-03:00",
+      "ateCinquenta": 14628,
+      "ateSetentaECinco": 541591,
+      "ateNoventa": 82304,
+      "ateCem": 50000
     },
     {
-      "id": 4,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T02:15:00-03:00",
+      "ateCinquenta": 14658,
+      "ateSetentaECinco": 539716,
+      "ateNoventa": 82074,
+      "ateCem": 50000
     },
     {
-      "id": 5,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T02:30:00-03:00",
+      "ateCinquenta": 14449,
+      "ateSetentaECinco": 538900,
+      "ateNoventa": 82048,
+      "ateCem": 50000
     },
     {
-      "id": 6,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T02:45:00-03:00",
+      "ateCinquenta": 14405,
+      "ateSetentaECinco": 537109,
+      "ateNoventa": 81998,
+      "ateCem": 50000
     },
     {
-      "id": 7,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
-      "priority": "high"
+      "date": "2022-09-18T03:00:00-03:00",
+      "ateCinquenta": 14403,
+      "ateSetentaECinco": 536769,
+      "ateNoventa": 86354,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T03:15:00-03:00",
+      "ateCinquenta": 15853,
+      "ateSetentaECinco": 534037,
+      "ateNoventa": 96877,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T03:30:00-03:00",
+      "ateCinquenta": 15002,
+      "ateSetentaECinco": 515238,
+      "ateNoventa": 95779,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T03:45:00-03:00",
+      "ateCinquenta": 14921,
+      "ateSetentaECinco": 516919,
+      "ateNoventa": 95678,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T04:00:00-03:00",
+      "ateCinquenta": 14873,
+      "ateSetentaECinco": 517451,
+      "ateNoventa": 95337,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T04:15:00-03:00",
+      "ateCinquenta": 15061,
+      "ateSetentaECinco": 521264,
+      "ateNoventa": 95134,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T04:30:00-03:00",
+      "ateCinquenta": 14722,
+      "ateSetentaECinco": 522129,
+      "ateNoventa": 94711,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T04:45:00-03:00",
+      "ateCinquenta": 14738,
+      "ateSetentaECinco": 522364,
+      "ateNoventa": 94632,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T05:00:00-03:00",
+      "ateCinquenta": 15318,
+      "ateSetentaECinco": 522636,
+      "ateNoventa": 94519,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T05:15:00-03:00",
+      "ateCinquenta": 15445,
+      "ateSetentaECinco": 522509,
+      "ateNoventa": 94374,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T05:30:00-03:00",
+      "ateCinquenta": 15423,
+      "ateSetentaECinco": 523758,
+      "ateNoventa": 94253,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T05:45:00-03:00",
+      "ateCinquenta": 15514,
+      "ateSetentaECinco": 524642,
+      "ateNoventa": 94234,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T06:00:00-03:00",
+      "ateCinquenta": 15541,
+      "ateSetentaECinco": 526223,
+      "ateNoventa": 94103,
+      "ateCem": 50000
+    },
+    {
+      "date": "2022-09-18T06:15:00-03:00",
+      "ateCinquenta": 15524,
+      "ateSetentaECinco": 527599,
+      "ateNoventa": 94362
+    },
+    {
+      "date": "2022-09-18T06:30:00-03:00",
+      "ateCinquenta": 15318,
+      "ateSetentaECinco": 530175,
+      "ateNoventa": 94434
+    },
+    {
+      "date": "2022-09-18T06:45:00-03:00",
+      "ateCinquenta": 15391,
+      "ateSetentaECinco": 533315,
+      "ateNoventa": 94426
+    },
+    {
+      "date": "2022-09-18T07:00:00-03:00",
+      "ateCinquenta": 15461,
+      "ateSetentaECinco": 536259,
+      "ateNoventa": 94368
+    },
+    {
+      "date": "2022-09-18T07:15:00-03:00",
+      "ateCinquenta": 15571,
+      "ateSetentaECinco": 538146,
+      "ateNoventa": 94386
+    },
+    {
+      "date": "2022-09-18T07:30:00-03:00",
+      "ateCinquenta": 15553,
+      "ateSetentaECinco": 541180,
+      "ateNoventa": 94432
+    },
+    {
+      "date": "2022-09-18T07:45:00-03:00",
+      "ateCinquenta": 15499,
+      "ateSetentaECinco": 543595,
+      "ateNoventa": 94494
+    },
+    {
+      "date": "2022-09-18T08:00:00-03:00",
+      "ateCinquenta": 15548,
+      "ateSetentaECinco": 547011,
+      "ateNoventa": 94658
+    },
+    {
+      "date": "2022-09-18T08:15:00-03:00",
+      "ateCinquenta": 15647,
+      "ateSetentaECinco": 550095,
+      "ateNoventa": 94691
+    },
+    {
+      "date": "2022-09-18T08:30:00-03:00",
+      "ateCinquenta": 15630,
+      "ateSetentaECinco": 552752,
+      "ateNoventa": 92509
+    },
+    {
+      "date": "2022-09-18T08:45:00-03:00",
+      "ateCinquenta": 15736,
+      "ateSetentaECinco": 555484,
+      "ateNoventa": 92453
+    },
+    {
+      "date": "2022-09-18T09:00:00-03:00",
+      "ateCinquenta": 15731,
+      "ateSetentaECinco": 557357,
+      "ateNoventa": 92455
+    },
+    {
+      "date": "2022-09-18T09:15:00-03:00",
+      "ateCinquenta": 15859,
+      "ateSetentaECinco": 559725,
+      "ateNoventa": 92690
+    },
+    {
+      "date": "2022-09-18T09:30:00-03:00",
+      "ateCinquenta": 15933,
+      "ateSetentaECinco": 561817,
+      "ateNoventa": 92924
+    },
+    {
+      "date": "2022-09-18T09:45:00-03:00",
+      "ateCinquenta": 15963,
+      "ateSetentaECinco": 563450,
+      "ateNoventa": 93018
+    },
+    {
+      "date": "2022-09-18T10:00:00-03:00",
+      "ateCinquenta": 16026,
+      "ateSetentaECinco": 565536,
+      "ateNoventa": 93095
+    },
+    {
+      "date": "2022-09-18T10:15:00-03:00",
+      "ateCinquenta": 16026,
+      "ateSetentaECinco": 567903,
+      "ateNoventa": 93149
+    },
+    {
+      "date": "2022-09-18T10:30:00-03:00",
+      "ateCinquenta": 16114,
+      "ateSetentaECinco": 569429,
+      "ateNoventa": 93212
+    },
+    {
+      "date": "2022-09-18T10:45:00-03:00",
+      "ateCinquenta": 16175,
+      "ateSetentaECinco": 569624,
+      "ateNoventa": 93220
+    },
+    {
+      "date": "2022-09-18T11:00:00-03:00",
+      "ateCinquenta": 16227,
+      "ateSetentaECinco": 570352,
+      "ateNoventa": 93393
+    },
+    {
+      "date": "2022-09-18T11:15:00-03:00",
+      "ateCinquenta": 16246,
+      "ateSetentaECinco": 571248,
+      "ateNoventa": 93578
+    },
+    {
+      "date": "2022-09-18T11:30:00-03:00",
+      "ateCinquenta": 16270,
+      "ateSetentaECinco": 571951,
+      "ateNoventa": 93555
+    },
+    {
+      "date": "2022-09-18T11:45:00-03:00",
+      "ateCinquenta": 16325,
+      "ateSetentaECinco": 571638,
+      "ateNoventa": 93452
+    },
+    {
+      "date": "2022-09-18T12:00:00-03:00",
+      "ateCinquenta": 16268,
+      "ateSetentaECinco": 571421,
+      "ateNoventa": 93288
+    },
+    {
+      "date": "2022-09-18T12:15:00-03:00",
+      "ateCinquenta": 16344,
+      "ateSetentaECinco": 570732,
+      "ateNoventa": 92792
+    },
+    {
+      "date": "2022-09-18T12:30:00-03:00",
+      "ateCinquenta": 16200,
+      "ateSetentaECinco": 571550,
+      "ateNoventa": 92256
+    },
+    {
+      "date": "2022-09-18T12:45:00-03:00",
+      "ateCinquenta": 16183,
+      "ateSetentaECinco": 571513,
+      "ateNoventa": 92007
+    },
+    {
+      "date": "2022-09-18T13:00:00-03:00",
+      "ateCinquenta": 16181,
+      "ateSetentaECinco": 567573,
+      "ateNoventa": 91630
+    },
+    {
+      "date": "2022-09-18T13:15:00-03:00",
+      "ateCinquenta": 16181,
+      "ateSetentaECinco": 567979,
+      "ateNoventa": 91478
+    },
+    {
+      "date": "2022-09-18T13:30:00-03:00",
+      "ateCinquenta": 16094,
+      "ateSetentaECinco": 567495,
+      "ateNoventa": 90822
+    },
+    {
+      "date": "2022-09-18T13:45:00-03:00",
+      "ateCinquenta": 16068,
+      "ateSetentaECinco": 566333,
+      "ateNoventa": 90684
+    },
+    {
+      "date": "2022-09-18T14:00:00-03:00",
+      "ateCinquenta": 16077,
+      "ateSetentaECinco": 566041,
+      "ateNoventa": 90495
+    },
+    {
+      "date": "2022-09-18T14:15:00-03:00",
+      "ateCinquenta": 16155,
+      "ateSetentaECinco": 565265,
+      "ateNoventa": 90337
+    },
+    {
+      "date": "2022-09-18T14:30:00-03:00",
+      "ateCinquenta": 16123,
+      "ateSetentaECinco": 564714,
+      "ateNoventa": 89983
+    },
+    {
+      "date": "2022-09-18T14:45:00-03:00",
+      "ateCinquenta": 16049,
+      "ateSetentaECinco": 563801,
+      "ateNoventa": 89853
+    },
+    {
+      "date": "2022-09-18T15:00:00-03:00",
+      "ateCinquenta": 16034,
+      "ateSetentaECinco": 563800,
+      "ateNoventa": 96223
+    },
+    {
+      "date": "2022-09-18T15:15:00-03:00",
+      "ateCinquenta": 14987,
+      "ateSetentaECinco": 567019,
+      "ateNoventa": 82346
+    },
+    {
+      "date": "2022-09-18T15:30:00-03:00",
+      "ateCinquenta": 14966,
+      "ateSetentaECinco": 564715,
+      "ateNoventa": 82256
+    },
+    {
+      "date": "2022-09-18T15:45:00-03:00",
+      "ateCinquenta": 14993,
+      "ateSetentaECinco": 564463,
+      "ateNoventa": 82227
+    },
+    {
+      "date": "2022-09-18T16:00:00-03:00",
+      "ateCinquenta": 14950,
+      "ateSetentaECinco": 564547,
+      "ateNoventa": 82738
+    },
+    {
+      "date": "2022-09-18T16:15:00-03:00",
+      "ateCinquenta": 14886,
+      "ateSetentaECinco": 564880,
+      "ateNoventa": 82048
+    },
+    {
+      "date": "2022-09-18T16:30:00-03:00",
+      "ateCinquenta": 14805,
+      "ateSetentaECinco": 565123,
+      "ateNoventa": 82018
+    },
+    {
+      "date": "2022-09-18T16:45:00-03:00",
+      "ateCinquenta": 14691,
+      "ateSetentaECinco": 565942,
+      "ateNoventa": 82035
+    },
+    {
+      "date": "2022-09-18T17:00:00-03:00",
+      "ateCinquenta": 14517,
+      "ateSetentaECinco": 566778,
+      "ateNoventa": 82050
+    },
+    {
+      "date": "2022-09-18T17:15:00-03:00",
+      "ateCinquenta": 14026,
+      "ateSetentaECinco": 567708,
+      "ateNoventa": 82044
+    },
+    {
+      "date": "2022-09-18T17:30:00-03:00",
+      "ateCinquenta": 14014,
+      "ateSetentaECinco": 568594,
+      "ateNoventa": 82036
+    },
+    {
+      "date": "2022-09-18T17:45:00-03:00",
+      "ateCinquenta": 14085,
+      "ateSetentaECinco": 569749,
+      "ateNoventa": 81916
+    },
+    {
+      "date": "2022-09-18T18:00:00-03:00",
+      "ateCinquenta": 14156,
+      "ateSetentaECinco": 570464,
+      "ateNoventa": 81941
+    },
+    {
+      "date": "2022-09-18T18:15:00-03:00",
+      "ateCinquenta": 14126,
+      "ateSetentaECinco": 569617,
+      "ateNoventa": 82077
+    },
+    {
+      "date": "2022-09-18T18:30:00-03:00",
+      "ateCinquenta": 14041,
+      "ateSetentaECinco": 570822,
+      "ateNoventa": 81980
+    },
+    {
+      "date": "2022-09-18T18:45:00-03:00",
+      "ateCinquenta": 14169,
+      "ateSetentaECinco": 571527,
+      "ateNoventa": 82004
+    },
+    {
+      "date": "2022-09-18T19:00:00-03:00",
+      "ateCinquenta": 14218,
+      "ateSetentaECinco": 572018,
+      "ateNoventa": 82140
+    },
+    {
+      "date": "2022-09-18T19:15:00-03:00",
+      "ateCinquenta": 14212,
+      "ateSetentaECinco": 572104,
+      "ateNoventa": 82176
+    },
+    {
+      "date": "2022-09-18T19:30:00-03:00",
+      "ateCinquenta": 14234,
+      "ateSetentaECinco": 572751,
+      "ateNoventa": 82267
+    },
+    {
+      "date": "2022-09-18T19:45:00-03:00",
+      "ateCinquenta": 14301,
+      "ateSetentaECinco": 572636,
+      "ateNoventa": 82245
+    },
+    {
+      "date": "2022-09-18T20:00:00-03:00",
+      "ateCinquenta": 14297,
+      "ateSetentaECinco": 575043,
+      "ateNoventa": 82239
+    },
+    {
+      "date": "2022-09-18T20:15:00-03:00",
+      "ateCinquenta": 14262,
+      "ateSetentaECinco": 574021,
+      "ateNoventa": 82057
+    },
+    {
+      "date": "2022-09-18T20:30:00-03:00",
+      "ateCinquenta": 14223,
+      "ateSetentaECinco": 573461,
+      "ateNoventa": 81942
+    },
+    {
+      "date": "2022-09-18T20:45:00-03:00",
+      "ateCinquenta": 14218,
+      "ateSetentaECinco": 572595,
+      "ateNoventa": 81898
+    },
+    {
+      "date": "2022-09-18T21:00:00-03:00",
+      "ateCinquenta": 14188,
+      "ateSetentaECinco": 571558,
+      "ateNoventa": 81719
+    },
+    {
+      "date": "2022-09-18T21:15:00-03:00",
+      "ateCinquenta": 14141,
+      "ateSetentaECinco": 569251,
+      "ateNoventa": 81524
+    },
+    {
+      "date": "2022-09-18T21:30:00-03:00",
+      "ateCinquenta": 14133,
+      "ateSetentaECinco": 568886,
+      "ateNoventa": 81342
+    },
+    {
+      "date": "2022-09-18T21:45:00-03:00",
+      "ateCinquenta": 14126,
+      "ateSetentaECinco": 566659,
+      "ateNoventa": 81135
+    },
+    {
+      "date": "2022-09-18T22:00:00-03:00",
+      "ateCinquenta": 14126,
+      "ateSetentaECinco": 565688,
+      "ateNoventa": 80973
+    },
+    {
+      "date": "2022-09-18T22:15:00-03:00",
+      "ateCinquenta": 14120,
+      "ateSetentaECinco": 563302,
+      "ateNoventa": 80743
+    },
+    {
+      "date": "2022-09-18T22:30:00-03:00",
+      "ateCinquenta": 14066,
+      "ateSetentaECinco": 561516,
+      "ateNoventa": 80646
+    },
+    {
+      "date": "2022-09-18T22:45:00-03:00",
+      "ateCinquenta": 13964,
+      "ateSetentaECinco": 559246,
+      "ateNoventa": 80398
+    },
+    {
+      "date": "2022-09-18T23:00:00-03:00",
+      "ateCinquenta": 13850,
+      "ateSetentaECinco": 557481,
+      "ateNoventa": 80190
+    },
+    {
+      "date": "2022-09-18T23:15:00-03:00",
+      "ateCinquenta": 13872,
+      "ateSetentaECinco": 554621,
+      "ateNoventa": 80112
+    },
+    {
+      "date": "2022-09-18T23:30:00-03:00",
+      "ateCinquenta": 13847,
+      "ateSetentaECinco": 553356,
+      "ateNoventa": 79741
+    },
+    {
+      "date": "2022-09-18T23:45:00-03:00",
+      "ateCinquenta": 13720,
+      "ateSetentaECinco": 550668,
+      "ateNoventa": 79455
+    },
+    {
+      "date": "2022-09-19T00:00:00-03:00",
+      "ateCinquenta": 13753,
+      "ateSetentaECinco": 548744,
+      "ateNoventa": 79151
+    },
+    {
+      "date": "2022-09-19T00:15:00-03:00",
+      "ateCinquenta": 13911,
+      "ateSetentaECinco": 546768,
+      "ateNoventa": 78809
+    },
+    {
+      "date": "2022-09-19T00:30:00-03:00",
+      "ateCinquenta": 13758,
+      "ateSetentaECinco": 545513,
+      "ateNoventa": 78499
+    },
+    {
+      "date": "2022-09-19T00:45:00-03:00",
+      "ateCinquenta": 13793,
+      "ateSetentaECinco": 543608,
+      "ateNoventa": 78254
+    },
+    {
+      "date": "2022-09-19T01:00:00-03:00",
+      "ateCinquenta": 13716,
+      "ateSetentaECinco": 541791,
+      "ateNoventa": 78142
+    },
+    {
+      "date": "2022-09-19T01:15:00-03:00",
+      "ateCinquenta": 13738,
+      "ateSetentaECinco": 539064,
+      "ateNoventa": 77976
+    },
+    {
+      "date": "2022-09-19T01:30:00-03:00",
+      "ateCinquenta": 13588,
+      "ateSetentaECinco": 537225,
+      "ateNoventa": 77846
+    },
+    {
+      "date": "2022-09-19T01:45:00-03:00",
+      "ateCinquenta": 13595,
+      "ateSetentaECinco": 536013,
+      "ateNoventa": 77650
+    },
+    {
+      "date": "2022-09-19T02:00:00-03:00",
+      "ateCinquenta": 13448,
+      "ateSetentaECinco": 535126,
+      "ateNoventa": 77542
+    },
+    {
+      "date": "2022-09-19T02:15:00-03:00",
+      "ateCinquenta": 13456,
+      "ateSetentaECinco": 532836,
+      "ateNoventa": 77402
+    },
+    {
+      "date": "2022-09-19T02:30:00-03:00",
+      "ateCinquenta": 13241,
+      "ateSetentaECinco": 531861,
+      "ateNoventa": 77256
+    },
+    {
+      "date": "2022-09-19T02:45:00-03:00",
+      "ateCinquenta": 13282,
+      "ateSetentaECinco": 531047,
+      "ateNoventa": 77170
+    },
+    {
+      "date": "2022-09-19T03:00:00-03:00",
+      "ateCinquenta": 13341,
+      "ateSetentaECinco": 530924,
+      "ateNoventa": 82603
+    },
+    {
+      "date": "2022-09-19T03:15:00-03:00",
+      "ateCinquenta": 15234,
+      "ateSetentaECinco": 527465,
+      "ateNoventa": 91571
+    },
+    {
+      "date": "2022-09-19T03:30:00-03:00",
+      "ateCinquenta": 13945,
+      "ateSetentaECinco": 510279,
+      "ateNoventa": 90526
+    },
+    {
+      "date": "2022-09-19T03:45:00-03:00",
+      "ateCinquenta": 13889,
+      "ateSetentaECinco": 512098,
+      "ateNoventa": 90475
+    },
+    {
+      "date": "2022-09-19T04:00:00-03:00",
+      "ateCinquenta": 13888,
+      "ateSetentaECinco": 513128,
+      "ateNoventa": 90209
+    },
+    {
+      "date": "2022-09-19T04:15:00-03:00",
+      "ateCinquenta": 14026,
+      "ateSetentaECinco": 518745,
+      "ateNoventa": 90002
+    },
+    {
+      "date": "2022-09-19T04:30:00-03:00",
+      "ateCinquenta": 13788,
+      "ateSetentaECinco": 519502,
+      "ateNoventa": 89686
+    },
+    {
+      "date": "2022-09-19T04:45:00-03:00",
+      "ateCinquenta": 13868,
+      "ateSetentaECinco": 519371,
+      "ateNoventa": 89704
+    },
+    {
+      "date": "2022-09-19T05:00:00-03:00",
+      "ateCinquenta": 14378,
+      "ateSetentaECinco": 520401,
+      "ateNoventa": 89619
+    },
+    {
+      "date": "2022-09-19T05:15:00-03:00",
+      "ateCinquenta": 14525,
+      "ateSetentaECinco": 522397,
+      "ateNoventa": 89511
+    },
+    {
+      "date": "2022-09-19T05:30:00-03:00",
+      "ateCinquenta": 14587,
+      "ateSetentaECinco": 525498,
+      "ateNoventa": 89465
+    },
+    {
+      "date": "2022-09-19T05:45:00-03:00",
+      "ateCinquenta": 14632,
+      "ateSetentaECinco": 528111,
+      "ateNoventa": 89354
+    },
+    {
+      "date": "2022-09-19T06:00:00-03:00",
+      "ateCinquenta": 14683,
+      "ateSetentaECinco": 532133,
+      "ateNoventa": 89402
+    },
+    {
+      "date": "2022-09-19T06:15:00-03:00",
+      "ateCinquenta": 14767,
+      "ateSetentaECinco": 537469,
+      "ateNoventa": 89593
+    },
+    {
+      "date": "2022-09-19T06:30:00-03:00",
+      "ateCinquenta": 14793,
+      "ateSetentaECinco": 543836,
+      "ateNoventa": 89647
+    },
+    {
+      "date": "2022-09-19T06:45:00-03:00",
+      "ateCinquenta": 14842,
+      "ateSetentaECinco": 550932,
+      "ateNoventa": 89720
+    },
+    {
+      "date": "2022-09-19T07:00:00-03:00",
+      "ateCinquenta": 14998,
+      "ateSetentaECinco": 560300,
+      "ateNoventa": 89913
+    },
+    {
+      "date": "2022-09-19T07:15:00-03:00",
+      "ateCinquenta": 15134,
+      "ateSetentaECinco": 567535,
+      "ateNoventa": 90386
+    },
+    {
+      "date": "2022-09-19T07:30:00-03:00",
+      "ateCinquenta": 15226,
+      "ateSetentaECinco": 574754,
+      "ateNoventa": 90771
+    },
+    {
+      "date": "2022-09-19T07:45:00-03:00",
+      "ateCinquenta": 15446,
+      "ateSetentaECinco": 582675,
+      "ateNoventa": 91399
+    },
+    {
+      "date": "2022-09-19T08:00:00-03:00",
+      "ateCinquenta": 15708,
+      "ateSetentaECinco": 588018,
+      "ateNoventa": 92485
+    },
+    {
+      "date": "2022-09-19T08:15:00-03:00",
+      "ateCinquenta": 16141,
+      "ateSetentaECinco": 592005,
+      "ateNoventa": 92891
+    },
+    {
+      "date": "2022-09-19T08:30:00-03:00",
+      "ateCinquenta": 16434,
+      "ateSetentaECinco": 595364,
+      "ateNoventa": 93494
+    },
+    {
+      "date": "2022-09-19T08:45:00-03:00",
+      "ateCinquenta": 16604,
+      "ateSetentaECinco": 597708,
+      "ateNoventa": 94631
+    },
+    {
+      "date": "2022-09-19T09:00:00-03:00",
+      "ateCinquenta": 16781,
+      "ateSetentaECinco": 599920,
+      "ateNoventa": 95789
+    },
+    {
+      "date": "2022-09-19T09:15:00-03:00",
+      "ateCinquenta": 16997,
+      "ateSetentaECinco": 601886,
+      "ateNoventa": 97335
+    },
+    {
+      "date": "2022-09-19T09:30:00-03:00",
+      "ateCinquenta": 17165,
+      "ateSetentaECinco": 602669,
+      "ateNoventa": 98459
+    },
+    {
+      "date": "2022-09-19T09:45:00-03:00",
+      "ateCinquenta": 17299,
+      "ateSetentaECinco": 602974,
+      "ateNoventa": 99478
+    },
+    {
+      "date": "2022-09-19T10:00:00-03:00",
+      "ateCinquenta": 17589,
+      "ateSetentaECinco": 604015,
+      "ateNoventa": 100343
+    },
+    {
+      "date": "2022-09-19T10:15:00-03:00",
+      "ateCinquenta": 17655,
+      "ateSetentaECinco": 604784,
+      "ateNoventa": 101023
+    },
+    {
+      "date": "2022-09-19T10:30:00-03:00",
+      "ateCinquenta": 17752,
+      "ateSetentaECinco": 605282,
+      "ateNoventa": 101483
+    },
+    {
+      "date": "2022-09-19T10:45:00-03:00",
+      "ateCinquenta": 17860,
+      "ateSetentaECinco": 607698,
+      "ateNoventa": 102062
+    },
+    {
+      "date": "2022-09-19T11:00:00-03:00",
+      "ateCinquenta": 17905,
+      "ateSetentaECinco": 601706,
+      "ateNoventa": 102481
+    },
+    {
+      "date": "2022-09-19T11:15:00-03:00",
+      "ateCinquenta": 18157,
+      "ateSetentaECinco": 603329,
+      "ateNoventa": 103136
+    },
+    {
+      "date": "2022-09-19T11:30:00-03:00",
+      "ateCinquenta": 18256,
+      "ateSetentaECinco": 609139,
+      "ateNoventa": 103616
+    },
+    {
+      "date": "2022-09-19T11:45:00-03:00",
+      "ateCinquenta": 18142,
+      "ateSetentaECinco": 608074,
+      "ateNoventa": 103775
+    },
+    {
+      "date": "2022-09-19T12:00:00-03:00",
+      "ateCinquenta": 18168,
+      "ateSetentaECinco": 602691,
+      "ateNoventa": 103848
+    },
+    {
+      "date": "2022-09-19T12:15:00-03:00",
+      "ateCinquenta": 18436,
+      "ateSetentaECinco": 610440,
+      "ateNoventa": 103683
+    },
+    {
+      "date": "2022-09-19T12:30:00-03:00",
+      "ateCinquenta": 18344,
+      "ateSetentaECinco": 608409,
+      "ateNoventa": 103668
+    },
+    {
+      "date": "2022-09-19T12:45:00-03:00",
+      "ateCinquenta": 18386,
+      "ateSetentaECinco": 605314,
+      "ateNoventa": 103732
+    },
+    {
+      "date": "2022-09-19T13:00:00-03:00",
+      "ateCinquenta": 18285,
+      "ateSetentaECinco": 605515,
+      "ateNoventa": 103859
+    },
+    {
+      "date": "2022-09-19T13:15:00-03:00",
+      "ateCinquenta": 18329,
+      "ateSetentaECinco": 605265,
+      "ateNoventa": 103918
+    },
+    {
+      "date": "2022-09-19T13:30:00-03:00",
+      "ateCinquenta": 18255,
+      "ateSetentaECinco": 596368,
+      "ateNoventa": 104018
+    },
+    {
+      "date": "2022-09-19T13:45:00-03:00",
+      "ateCinquenta": 18290,
+      "ateSetentaECinco": 598154,
+      "ateNoventa": 104212
+    },
+    {
+      "date": "2022-09-19T14:00:00-03:00",
+      "ateCinquenta": 18413,
+      "ateSetentaECinco": 599798,
+      "ateNoventa": 104471
+    },
+    {
+      "date": "2022-09-19T14:15:00-03:00",
+      "ateCinquenta": 18406,
+      "ateSetentaECinco": 601752,
+      "ateNoventa": 104708
+    },
+    {
+      "date": "2022-09-19T14:30:00-03:00",
+      "ateCinquenta": 18413,
+      "ateSetentaECinco": 598604,
+      "ateNoventa": 104965
+    },
+    {
+      "date": "2022-09-19T14:45:00-03:00",
+      "ateCinquenta": 18358,
+      "ateSetentaECinco": 598384,
+      "ateNoventa": 105166
+    },
+    {
+      "date": "2022-09-19T15:00:00-03:00",
+      "ateCinquenta": 18432,
+      "ateSetentaECinco": 598974,
+      "ateNoventa": 112104
+    },
+    {
+      "date": "2022-09-19T15:15:00-03:00",
+      "ateCinquenta": 17662,
+      "ateSetentaECinco": 601131,
+      "ateNoventa": 97549
+    },
+    {
+      "date": "2022-09-19T15:30:00-03:00",
+      "ateCinquenta": 17781,
+      "ateSetentaECinco": 601160,
+      "ateNoventa": 97722
+    },
+    {
+      "date": "2022-09-19T15:45:00-03:00",
+      "ateCinquenta": 17853,
+      "ateSetentaECinco": 601893,
+      "ateNoventa": 98031
+    },
+    {
+      "date": "2022-09-19T16:00:00-03:00",
+      "ateCinquenta": 17748,
+      "ateSetentaECinco": 601708,
+      "ateNoventa": 98904
+    },
+    {
+      "date": "2022-09-19T16:15:00-03:00",
+      "ateCinquenta": 17699,
+      "ateSetentaECinco": 602414,
+      "ateNoventa": 98367
+    },
+    {
+      "date": "2022-09-19T16:30:00-03:00",
+      "ateCinquenta": 17738,
+      "ateSetentaECinco": 601619,
+      "ateNoventa": 98699
+    },
+    {
+      "date": "2022-09-19T16:45:00-03:00",
+      "ateCinquenta": 17648,
+      "ateSetentaECinco": 603389,
+      "ateNoventa": 98779
+    },
+    {
+      "date": "2022-09-19T17:00:00-03:00",
+      "ateCinquenta": 17499,
+      "ateSetentaECinco": 605302,
+      "ateNoventa": 98800
+    },
+    {
+      "date": "2022-09-19T17:15:00-03:00",
+      "ateCinquenta": 17408,
+      "ateSetentaECinco": 608144,
+      "ateNoventa": 98427
+    },
+    {
+      "date": "2022-09-19T17:30:00-03:00",
+      "ateCinquenta": 17423,
+      "ateSetentaECinco": 612144,
+      "ateNoventa": 98241
+    },
+    {
+      "date": "2022-09-19T17:45:00-03:00",
+      "ateCinquenta": 17505,
+      "ateSetentaECinco": 614018,
+      "ateNoventa": 97837
+    },
+    {
+      "date": "2022-09-19T18:00:00-03:00",
+      "ateCinquenta": 17391,
+      "ateSetentaECinco": 607836,
+      "ateNoventa": 97121
+    },
+    {
+      "date": "2022-09-19T18:15:00-03:00",
+      "ateCinquenta": 17526,
+      "ateSetentaECinco": 611060,
+      "ateNoventa": 95160
+    },
+    {
+      "date": "2022-09-19T18:30:00-03:00",
+      "ateCinquenta": 17446,
+      "ateSetentaECinco": 611349,
+      "ateNoventa": 92840
+    },
+    {
+      "date": "2022-09-19T18:45:00-03:00",
+      "ateCinquenta": 17486,
+      "ateSetentaECinco": 610670,
+      "ateNoventa": 91748
+    },
+    {
+      "date": "2022-09-19T19:00:00-03:00",
+      "ateCinquenta": 17446,
+      "ateSetentaECinco": 608607,
+      "ateNoventa": 90905
+    },
+    {
+      "date": "2022-09-19T19:15:00-03:00",
+      "ateCinquenta": 17326,
+      "ateSetentaECinco": 606807,
+      "ateNoventa": 89814
+    },
+    {
+      "date": "2022-09-19T19:30:00-03:00",
+      "ateCinquenta": 17303,
+      "ateSetentaECinco": 605397,
+      "ateNoventa": 88917
+    },
+    {
+      "date": "2022-09-19T19:45:00-03:00",
+      "ateCinquenta": 17114,
+      "ateSetentaECinco": 601802,
+      "ateNoventa": 88585
+    },
+    {
+      "date": "2022-09-19T20:00:00-03:00",
+      "ateCinquenta": 17024,
+      "ateSetentaECinco": 599511,
+      "ateNoventa": 88119
+    },
+    {
+      "date": "2022-09-19T20:15:00-03:00",
+      "ateCinquenta": 16945,
+      "ateSetentaECinco": 596697,
+      "ateNoventa": 87458
+    },
+    {
+      "date": "2022-09-19T20:30:00-03:00",
+      "ateCinquenta": 16812,
+      "ateSetentaECinco": 594022,
+      "ateNoventa": 87129
+    },
+    {
+      "date": "2022-09-19T20:45:00-03:00",
+      "ateCinquenta": 16584,
+      "ateSetentaECinco": 591403,
+      "ateNoventa": 86937
+    },
+    {
+      "date": "2022-09-19T21:00:00-03:00",
+      "ateCinquenta": 16565,
+      "ateSetentaECinco": 588401,
+      "ateNoventa": 86635
+    },
+    {
+      "date": "2022-09-19T21:15:00-03:00",
+      "ateCinquenta": 16374,
+      "ateSetentaECinco": 584606,
+      "ateNoventa": 86332
+    },
+    {
+      "date": "2022-09-19T21:30:00-03:00",
+      "ateCinquenta": 16264,
+      "ateSetentaECinco": 582996,
+      "ateNoventa": 86188
+    },
+    {
+      "date": "2022-09-19T21:45:00-03:00",
+      "ateCinquenta": 16240,
+      "ateSetentaECinco": 579761,
+      "ateNoventa": 85873
+    },
+    {
+      "date": "2022-09-19T22:00:00-03:00",
+      "ateCinquenta": 16232,
+      "ateSetentaECinco": 576893,
+      "ateNoventa": 85503
+    },
+    {
+      "date": "2022-09-19T22:15:00-03:00",
+      "ateCinquenta": 16165,
+      "ateSetentaECinco": 573346,
+      "ateNoventa": 85321
+    },
+    {
+      "date": "2022-09-19T22:30:00-03:00",
+      "ateCinquenta": 16112,
+      "ateSetentaECinco": 571302,
+      "ateNoventa": 85059
+    },
+    {
+      "date": "2022-09-19T22:45:00-03:00",
+      "ateCinquenta": 16050,
+      "ateSetentaECinco": 568809,
+      "ateNoventa": 84842
+    },
+    {
+      "date": "2022-09-19T23:00:00-03:00",
+      "ateCinquenta": 15934,
+      "ateSetentaECinco": 565145,
+      "ateNoventa": 84523
+    },
+    {
+      "date": "2022-09-19T23:15:00-03:00",
+      "ateCinquenta": 15849,
+      "ateSetentaECinco": 561677,
+      "ateNoventa": 84617
+    },
+    {
+      "date": "2022-09-19T23:30:00-03:00",
+      "ateCinquenta": 15715,
+      "ateSetentaECinco": 560162,
+      "ateNoventa": 84407
+    },
+    {
+      "date": "2022-09-19T23:45:00-03:00",
+      "ateCinquenta": 15683,
+      "ateSetentaECinco": 557407,
+      "ateNoventa": 84147
+    },
+    {
+      "date": "2022-09-20T00:00:00-03:00",
+      "ateCinquenta": 15571,
+      "ateSetentaECinco": 555312,
+      "ateNoventa": 84090
+    },
+    {
+      "date": "2022-09-20T00:15:00-03:00",
+      "ateCinquenta": 15394,
+      "ateSetentaECinco": 552329,
+      "ateNoventa": 83753
+    },
+    {
+      "date": "2022-09-20T00:30:00-03:00",
+      "ateCinquenta": 15145,
+      "ateSetentaECinco": 549689,
+      "ateNoventa": 83522
+    },
+    {
+      "date": "2022-09-20T00:45:00-03:00",
+      "ateCinquenta": 15101,
+      "ateSetentaECinco": 545612,
+      "ateNoventa": 83345
+    },
+    {
+      "date": "2022-09-20T01:00:00-03:00",
+      "ateCinquenta": 14972,
+      "ateSetentaECinco": 542048,
+      "ateNoventa": 83253
+    },
+    {
+      "date": "2022-09-20T01:15:00-03:00",
+      "ateCinquenta": 14953,
+      "ateSetentaECinco": 542346,
+      "ateNoventa": 82894
+    },
+    {
+      "date": "2022-09-20T01:30:00-03:00",
+      "ateCinquenta": 14892,
+      "ateSetentaECinco": 542479,
+      "ateNoventa": 82675
+    },
+    {
+      "date": "2022-09-20T01:45:00-03:00",
+      "ateCinquenta": 14826,
+      "ateSetentaECinco": 541934,
+      "ateNoventa": 82463
+    },
+    {
+      "date": "2022-09-20T02:00:00-03:00",
+      "ateCinquenta": 14669,
+      "ateSetentaECinco": 537275,
+      "ateNoventa": 82331
+    },
+    {
+      "date": "2022-09-20T02:15:00-03:00",
+      "ateCinquenta": 14861,
+      "ateSetentaECinco": 534226,
+      "ateNoventa": 82070
+    },
+    {
+      "date": "2022-09-20T02:30:00-03:00",
+      "ateCinquenta": 14825,
+      "ateSetentaECinco": 534241,
+      "ateNoventa": 81895
+    },
+    {
+      "date": "2022-09-20T02:45:00-03:00",
+      "ateCinquenta": 14769,
+      "ateSetentaECinco": 533569,
+      "ateNoventa": 81760
+    },
+    {
+      "date": "2022-09-20T03:00:00-03:00",
+      "ateCinquenta": 14709,
+      "ateSetentaECinco": 533420,
+      "ateNoventa": 85715
+    },
+    {
+      "date": "2022-09-20T03:15:00-03:00",
+      "ateCinquenta": 16285,
+      "ateSetentaECinco": 531063,
+      "ateNoventa": 99240
+    },
+    {
+      "date": "2022-09-20T03:30:00-03:00",
+      "ateCinquenta": 14853,
+      "ateSetentaECinco": 513156,
+      "ateNoventa": 98316
+    },
+    {
+      "date": "2022-09-20T03:45:00-03:00",
+      "ateCinquenta": 14819,
+      "ateSetentaECinco": 514298,
+      "ateNoventa": 98253
+    },
+    {
+      "date": "2022-09-20T04:00:00-03:00",
+      "ateCinquenta": 14751,
+      "ateSetentaECinco": 515380,
+      "ateNoventa": 97877
+    },
+    {
+      "date": "2022-09-20T04:15:00-03:00",
+      "ateCinquenta": 15104,
+      "ateSetentaECinco": 519274,
+      "ateNoventa": 97602
+    },
+    {
+      "date": "2022-09-20T04:30:00-03:00",
+      "ateCinquenta": 14833,
+      "ateSetentaECinco": 520271,
+      "ateNoventa": 97178
+    },
+    {
+      "date": "2022-09-20T04:45:00-03:00",
+      "ateCinquenta": 14882,
+      "ateSetentaECinco": 520301,
+      "ateNoventa": 97009
+    },
+    {
+      "date": "2022-09-20T05:00:00-03:00",
+      "ateCinquenta": 15363,
+      "ateSetentaECinco": 521164,
+      "ateNoventa": 96903
+    },
+    {
+      "date": "2022-09-20T05:15:00-03:00",
+      "ateCinquenta": 15450,
+      "ateSetentaECinco": 522996,
+      "ateNoventa": 96736
+    },
+    {
+      "date": "2022-09-20T05:30:00-03:00",
+      "ateCinquenta": 15516,
+      "ateSetentaECinco": 525648,
+      "ateNoventa": 96626
+    },
+    {
+      "date": "2022-09-20T05:45:00-03:00",
+      "ateCinquenta": 15532,
+      "ateSetentaECinco": 529580,
+      "ateNoventa": 96687
+    },
+    {
+      "date": "2022-09-20T06:00:00-03:00",
+      "ateCinquenta": 15644,
+      "ateSetentaECinco": 534693,
+      "ateNoventa": 96663
+    },
+    {
+      "date": "2022-09-20T06:15:00-03:00",
+      "ateCinquenta": 15605,
+      "ateSetentaECinco": 540240,
+      "ateNoventa": 96636
+    },
+    {
+      "date": "2022-09-20T06:30:00-03:00",
+      "ateCinquenta": 15617,
+      "ateSetentaECinco": 546078,
+      "ateNoventa": 96685
+    },
+    {
+      "date": "2022-09-20T06:45:00-03:00",
+      "ateCinquenta": 15722,
+      "ateSetentaECinco": 553229,
+      "ateNoventa": 96654
+    },
+    {
+      "date": "2022-09-20T07:00:00-03:00",
+      "ateCinquenta": 15801,
+      "ateSetentaECinco": 563130,
+      "ateNoventa": 96707
+    },
+    {
+      "date": "2022-09-20T07:15:00-03:00",
+      "ateCinquenta": 15849,
+      "ateSetentaECinco": 570869,
+      "ateNoventa": 97260
+    },
+    {
+      "date": "2022-09-20T07:30:00-03:00",
+      "ateCinquenta": 15904,
+      "ateSetentaECinco": 577719,
+      "ateNoventa": 97612
+    },
+    {
+      "date": "2022-09-20T07:45:00-03:00",
+      "ateCinquenta": 16049,
+      "ateSetentaECinco": 584525,
+      "ateNoventa": 98181
+    },
+    {
+      "date": "2022-09-20T08:00:00-03:00",
+      "ateCinquenta": 16361,
+      "ateSetentaECinco": 591893,
+      "ateNoventa": 99001
+    },
+    {
+      "date": "2022-09-20T08:15:00-03:00",
+      "ateCinquenta": 16591,
+      "ateSetentaECinco": 596235,
+      "ateNoventa": 99183
+    },
+    {
+      "date": "2022-09-20T08:30:00-03:00",
+      "ateCinquenta": 16752,
+      "ateSetentaECinco": 598999,
+      "ateNoventa": 98964
+    },
+    {
+      "date": "2022-09-20T08:45:00-03:00",
+      "ateCinquenta": 16916,
+      "ateSetentaECinco": 601533,
+      "ateNoventa": 99983
+    },
+    {
+      "date": "2022-09-20T09:00:00-03:00",
+      "ateCinquenta": 17197,
+      "ateSetentaECinco": 603575,
+      "ateNoventa": 100990
+    },
+    {
+      "date": "2022-09-20T09:15:00-03:00",
+      "ateCinquenta": 17575,
+      "ateSetentaECinco": 604801,
+      "ateNoventa": 102193
+    },
+    {
+      "date": "2022-09-20T09:30:00-03:00",
+      "ateCinquenta": 17653,
+      "ateSetentaECinco": 605741,
+      "ateNoventa": 103273
+    },
+    {
+      "date": "2022-09-20T09:45:00-03:00",
+      "ateCinquenta": 17776,
+      "ateSetentaECinco": 606778,
+      "ateNoventa": 104162
+    },
+    {
+      "date": "2022-09-20T10:00:00-03:00",
+      "ateCinquenta": 17899,
+      "ateSetentaECinco": 607469,
+      "ateNoventa": 104894
     }
   ]
 }
