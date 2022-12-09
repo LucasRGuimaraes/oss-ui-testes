@@ -38,7 +38,7 @@ export function Servers() {
         ) : (
           <Grid container alignItems="stretch" spacing={2} padding={2}>
             <Box width="50%" display="flex" flexDirection="column" alignItems="center" color="green">
-              <img src="/server-img.png" alt="Image Server" height="250" />
+              <img src="/server-img.png" alt="Image Server" style={{ maxHeight: "150px" }} />
               <Typography variant="h5" fontWeight="500" display="flex" alignItems="center" gap={1} pt={2}>
                 <FaCircle /> ONLINE
               </Typography>

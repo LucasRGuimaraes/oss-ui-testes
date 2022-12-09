@@ -121,7 +121,7 @@ export function Problems() {
           </Box>
         ) : (
           <DataGrid
-            sx={{ height: 346, width: "100%" }}
+            sx={{ maxHeight: 275, width: "100%" }}
             getRowId={() => Math.random()}
             density="compact"
             disableColumnMenu

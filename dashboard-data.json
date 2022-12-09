@@ -93,49 +93,49 @@
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 2,
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 3,
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 4,
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 5,
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 6,
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 7,
       "host": "DATELO.MOT.VEYE",
       "usageCpuPercent": 86.97,
       "usageMemoryPercent": 85.464,
-      "duration": "2022-09-14T00:00:00-03:00"
+      "startTime": "2022-12-09T02:10:00-03:00"
     }
   ],
   "disk-partition-usage": [
