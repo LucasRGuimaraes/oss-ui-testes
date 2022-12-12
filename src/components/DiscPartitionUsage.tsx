@@ -57,10 +57,10 @@ export function DiscPartitionUsage() {
               <YAxis />
               <CartesianGrid strokeDasharray="3 3" />
               <Tooltip />
-              <Area type="monotone" dataKey="ateCinquenta" stroke="#003F5B" fill="#003F5B" fillOpacity={0.8} stackId="1" name="Até 50%" />
-              <Area type="monotone" dataKey="ateSetentaECinco" stroke="#A0A4C9" fill="#A0A4C9" fillOpacity={0.8} stackId="1" name="Até 75%" />
-              <Area type="monotone" dataKey="ateNoventa" stroke="#FFA603" fill="#FFA603" fillOpacity={0.8} stackId="1" name="Até 90%" />
-              <Area type="monotone" dataKey="ateCem" stroke="#FFA603" fill="#FFA603" fillOpacity={0.8} stackId="1" name="Até 100%" />
+              <Area type="monotone" dataKey="ateCinquenta" stroke="#328eb39b" fill="#328eb39b " fillOpacity={0.8} stackId="1" name="Até 50%" />
+              <Area type="monotone" dataKey="ateSetentaECinco" stroke="#d49b0092" fill="#d49b0092" fillOpacity={0.8} stackId="1" name="Até 75%" />
+              <Area type="monotone" dataKey="ateNoventa" stroke="#ec03d9ae" fill="#ec03d9ae" fillOpacity={0.8} stackId="1" name="Até 90%" />
+              <Area type="monotone" dataKey="ateCem" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="Até 100%" />
             </AreaChart>
           </ResponsiveContainer>
         )}

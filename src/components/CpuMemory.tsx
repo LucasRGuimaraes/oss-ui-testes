@@ -51,7 +51,9 @@ export function CpuMemory() {
 
   return (
     <Card sx={{ height: "100%" }}>
-      <CardHeader title="CPU / MEM" />
+      <CardHeader>
+        <Typography>CPU / MEM</Typography>
+      </CardHeader>
       <Divider />
       <CardContent>
         {isError || isFetching || !data || !data.length ? (

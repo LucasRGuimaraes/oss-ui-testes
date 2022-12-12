@@ -39,28 +39,28 @@ export function Servers() {
           <Grid container alignItems="stretch" spacing={2} padding={2}>
             <Box width="50%" display="flex" flexDirection="column" alignItems="center" color="green">
               <img src="/server-img.png" alt="Image Server" style={{ maxHeight: "150px" }} />
-              <Typography variant="h5" fontWeight="500" display="flex" alignItems="center" gap={1} pt={2}>
-                <FaCircle /> ONLINE
-              </Typography>
-              <Typography variant="h2" pt={1} fontFamily="monospace">
+              <Typography variant="h1" pt={1} fontFamily="monospace">
                 {data?.totalServers}
               </Typography>
+              <Typography variant="h5" fontWeight="500" display="flex" alignItems="center" gap={1}>
+                <FaCircle /> ONLINE
+              </Typography>
             </Box>
-            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={5} color="red">
+            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={3} color="red">
               <Box width="100%" display="flex" flexDirection="column" alignItems="center">
-                <Typography variant="h4" fontWeight="500" pt={2}>
-                  SERVERS DOWN
-                </Typography>
-                <Typography variant="h2" pt={1} fontFamily="monospace">
+                <Typography variant="h1" fontFamily="monospace">
                   {data?.downServers}
+                </Typography>
+                <Typography variant="h5" fontWeight="500">
+                  SERVERS DOWN
                 </Typography>
               </Box>
               <Box width="100%" display="flex" flexDirection="column" alignItems="center" color="red">
-                <Typography variant="h4" fontWeight="500" pt={2}>
-                  PROBLEMS
-                </Typography>
-                <Typography variant="h2" pt={1} fontFamily="monospace">
+                <Typography variant="h1" fontFamily="monospace">
                   {data?.problems}
+                </Typography>
+                <Typography variant="h5" fontWeight="500">
+                  PROBLEMS
                 </Typography>
               </Box>
             </Box>
