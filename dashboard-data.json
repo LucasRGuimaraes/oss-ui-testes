@@ -160,5 +160,37 @@
       "ateNoventa": 0,
       "ateCem": 2
     }
+  ],
+  "disk-partition-usage-polar-graphic": {
+    "ateCinquenta": 11,
+    "ateSetentaECinco": 10,
+    "ateNoventa": 8,
+    "ateCem": 7
+  },
+  "groups": [
+    {
+      "id": 1,
+      "groupName": "DB",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "groupName": "DNS",
+      "hostQuantity": 2,
+      "priority": "Medium"
+    },
+    {
+      "id": 3,
+      "groupName": "Application",
+      "hostQuantity": 2,
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "groupName": "Prometheus",
+      "hostQuantity": 2,
+      "priority": "Low"
+    }
   ]
 }
