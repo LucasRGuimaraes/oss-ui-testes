@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/materia
 import { Box } from "@mui/system";
 import moment from "moment";
 import { useQuery } from "react-query";
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis, Radar, Legend } from "recharts";
 import { api } from "../services/api";
 
 interface DiscPartitionUsageData {
@@ -57,10 +57,11 @@ export function DiscPartitionUsage() {
               <YAxis />
               <CartesianGrid strokeDasharray="3 3" />
               <Tooltip />
-              <Area type="monotone" dataKey="ateCinquenta" stroke="#328eb39b" fill="#328eb39b " fillOpacity={0.8} stackId="1" name="Até 50%" />
-              <Area type="monotone" dataKey="ateSetentaECinco" stroke="#d49b0092" fill="#d49b0092" fillOpacity={0.8} stackId="1" name="Até 75%" />
-              <Area type="monotone" dataKey="ateNoventa" stroke="#ec03d9ae" fill="#ec03d9ae" fillOpacity={0.8} stackId="1" name="Até 90%" />
+              <Area type="monotone" dataKey="ateCinquenta" stroke="#71E571" fill="#71E571 " fillOpacity={0.8} stackId="1" name="Até 50%" />
+              <Area type="monotone" dataKey="ateSetentaECinco" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="Até 75%" />
+              <Area type="monotone" dataKey="ateNoventa" stroke="#F64A00" fill="#F64A00" fillOpacity={0.8} stackId="1" name="Até 90%" />
               <Area type="monotone" dataKey="ateCem" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="Até 100%" />
+              <Legend />
             </AreaChart>
           </ResponsiveContainer>
         )}
