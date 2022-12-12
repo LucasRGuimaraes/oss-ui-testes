@@ -2,8 +2,8 @@
   "servers": {
     "id": 1,
     "totalServers": 50,
-    "downServers": 2,
-    "problems": 3
+    "downServers": 1,
+    "problems": 1
   },
   "problems": [
     {

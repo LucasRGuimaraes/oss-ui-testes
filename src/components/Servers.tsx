@@ -1,5 +1,6 @@
 import { Box, Card, CardContent, CardHeader, Divider, Grid, Typography } from "@mui/material";
-import { FaCircle } from "react-icons/fa";
+import { useState } from "react";
+import { FaCircle, FaDatabase } from "react-icons/fa";
 import { useQuery } from "react-query";
 import { api } from "../services/api";
 
@@ -9,11 +10,35 @@ interface ServersData {
   problems: Number;
 }
 
+interface generatePanelData {
+  data: Number;
+  title: String;
+}
+
+type imgUrlType = "/servers-error.svg" | "/servers-alert.svg" | "/servers-ok.svg";
+type textColorType = "#1f993e" | "#EFC41A" | "#ed6161";
+
 export function Servers() {
   const { data, isFetching, isError } = useQuery("servers", fetchData);
 
+  const [imgUrl, setImgUrl] = useState<imgUrlType>("/servers-ok.svg");
+  const [textColor, setTextColor] = useState<textColorType>("#1f993e");
+
   async function fetchData() {
-    return (await api.get<ServersData>("/servers")).data;
+    const data = (await api.get<ServersData>("/servers")).data;
+
+    if (data.problems) {
+      setImgUrl("/servers-error.svg");
+      setTextColor("#ed6161");
+    } else if (data.downServers) {
+      setImgUrl("/servers-alert.svg");
+      setTextColor("#EFC41A");
+    } else {
+      setImgUrl("/servers-ok.svg");
+      setTextColor("#1f993e");
+    }
+
+    return data;
   }
 
   return (
@@ -37,36 +62,35 @@ export function Servers() {
           </Box>
         ) : (
           <Grid container alignItems="stretch" spacing={2} padding={2}>
-            <Box width="50%" display="flex" flexDirection="column" alignItems="center" color="green">
-              <img src="/server-img.png" alt="Image Server" style={{ maxHeight: "150px" }} />
-              <Typography variant="h1" pt={1} fontFamily="monospace">
+            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color={textColor}>
+              <img src={imgUrl} alt="Image Server" style={{ maxHeight: "100px", marginTop: "16px" }} />
+              <Typography variant="h1" mt={2} fontFamily="monospace">
                 {data?.totalServers}
               </Typography>
               <Typography variant="h5" fontWeight="500" display="flex" alignItems="center" gap={1}>
                 <FaCircle /> ONLINE
               </Typography>
             </Box>
-            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={3} color="red">
-              <Box width="100%" display="flex" flexDirection="column" alignItems="center">
-                <Typography variant="h1" fontFamily="monospace">
-                  {data?.downServers}
-                </Typography>
-                <Typography variant="h5" fontWeight="500">
-                  SERVERS DOWN
-                </Typography>
-              </Box>
-              <Box width="100%" display="flex" flexDirection="column" alignItems="center" color="red">
-                <Typography variant="h1" fontFamily="monospace">
-                  {data?.problems}
-                </Typography>
-                <Typography variant="h5" fontWeight="500">
-                  PROBLEMS
-                </Typography>
-              </Box>
+            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={3} color={textColor}>
+              <InfoPanel data={data.downServers} title="SERVERS DOWN" />
+              <InfoPanel data={data.problems} title="PROBLEMS" />
             </Box>
           </Grid>
         )}
       </CardContent>
     </Card>
+  );
+}
+
+function InfoPanel({ data, title }: generatePanelData) {
+  return (
+    <Box width="100%" display="flex" flexDirection="column" alignItems="center">
+      <Typography variant="h1" fontFamily="monospace">
+        {data}
+      </Typography>
+      <Typography variant="h5" fontWeight="500">
+        {title}
+      </Typography>
+    </Box>
   );
 }
