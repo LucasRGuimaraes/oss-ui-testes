@@ -1,12 +1,9 @@
 import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
-import * as React from "react";
-import Box from "@mui/material/Box";
-import { DataGrid, GridCell, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import { api } from "../services/api"
+import { api } from "../services/api";
 
 export function GroupsProblems() {
-
   const columns: GridColDef[] = [
     {
       field: "groupName",
@@ -18,16 +15,12 @@ export function GroupsProblems() {
       headerName: "Priority",
       flex: 1,
       renderCell: (params) => {
-        return params.value == "high" ?(
-          <Typography sx={{"color": "red"}}>
-            {params.value}
-          </Typography>
-        ) : (
-          <Typography sx={{"color": "red", "borderColor": "red"}}>
-            {params.value}
-          </Typography>
-        );
-      }   
+        if (params.value == "high") {
+          return <Typography sx={{ color: "red" }}>{params.value}</Typography>;
+        } else {
+          return <Typography sx={{ color: "orange", borderColor: "red" }}>{params.value}</Typography>;
+        }
+      },
     },
     {
       field: "hostQuantity",
@@ -36,30 +29,22 @@ export function GroupsProblems() {
       flex: 1,
     },
   ];
-  
+
   const [rows, setRows] = useState([]);
-  
+
   useEffect(() => {
-      api
-        .get("groups")
-        .then((response) => setRows(response.data))
+    api
+      .get("groups")
+      .then((response) => setRows(response.data))
+      .catch(() => console.log("A requisição falhou"));
   }, []);
 
-
   return (
-    <Card sx={{ height: 400 }}>
+    <Card sx={{ height: "100%" }}>
       <CardHeader title="Groups" />
       <Divider />
       <CardContent>
-        <Box sx={{ height: "100%", width: "100%" }}>
-          <DataGrid
-            rows={rows}
-            columns={columns}
-            pageSize={5}
-            disableSelectionOnClick
-            experimentalFeatures={{ newEditingApi: true }}
-          />
-        </Box>
+        <DataGrid rows={rows} columns={columns} pageSize={5} disableSelectionOnClick />
       </CardContent>
     </Card>
   );
