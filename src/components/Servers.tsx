@@ -54,7 +54,7 @@ export function Servers() {
                 {data?.totalServers}
               </Typography>
               <Typography variant="h6" display="flex" alignItems="center" gap={1}>
-                <FaCircle /> ONLINE
+                <FaCircle /> HOSTS
               </Typography>
             </Grid>
             <Grid item md={6} display="flex" flexDirection="column" justifyContent="center" gap={2} color="#E90000">

@@ -16,12 +16,21 @@ interface cpuMemoryUsageData {
 
 export function CpuMemory() {
   const { data, isFetching, isError } = useQuery("cpuMemoryUsage", fetchData);
+
   const [topCpuUsage, setTopCpuUsage] = useState<Number>(0);
   const [topMemoryUsage, setTopMemoryUsage] = useState<Number>(0);
 
   async function fetchData() {
     const data = (await api.get<cpuMemoryUsageData[]>("/cpu-memory-usage?_sort=usageCpuPercent&_order=desc")).data;
     const formattedDate = data.map((item) => {
+      return {
+        ...item,
+        duration: moment(item.startTime).fromNow(true),
+        usagePercent: formatPercentage(item.usagePercent),
+      };
+    });
+
+    data.forEach((item) => {
       if (item.type === "CPU") {
         if (item.usagePercent > topCpuUsage) {
           setTopCpuUsage(item.usagePercent);
@@ -31,13 +40,8 @@ export function CpuMemory() {
           setTopMemoryUsage(item.usagePercent);
         }
       }
-
-      return {
-        ...item,
-        duration: moment(item.startTime).fromNow(true),
-        usagePercent: formatPercentage(item.usagePercent),
-      };
     });
+
     return formattedDate;
   }
 
@@ -66,7 +70,7 @@ export function CpuMemory() {
 
   return (
     <Card sx={{ height: "100%" }}>
-      <CardHeader title={`CPU ${topCpuUsage} | MEM ${topMemoryUsage}`} />
+      <CardHeader title={`CPU: ${formatPercentage(topCpuUsage)} | Memory: ${formatPercentage(topMemoryUsage)}`} />
       <Divider />
       <CardContent>
         {isError || isFetching || !data || !data.length ? (
@@ -93,6 +97,9 @@ export function CpuMemory() {
             pageSize={10}
             columns={columns}
             rows={data}
+            getRowClassName={(params) => {
+              params.row.usagePercent;
+            }}
           />
         )}
       </CardContent>
