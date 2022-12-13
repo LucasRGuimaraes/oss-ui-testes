@@ -8,52 +8,52 @@
   "problems": [
     {
       "id": 1,
-      "startTime": "2022-12-14T00:00:00-03:00",
+      "startTime": "2022-12-13T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "Postgres server 2019",
+      "host": "Guaipa",
       "problemDescription": "Postgres does't respond",
-      "duration": "2022-12-14T00:00:00-03:00",
+      "duration": "2022-12-13T00:00:00-03:00",
       "severity": "high"
     },
     {
       "id": 2,
-      "startTime": "2022-12-14T00:00:00-03:00",
+      "startTime": "2022-12-13T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "File server 2020",
+      "host": "Guama",
       "problemDescription": "time remaining until capacity limit is reached: 258 days",
       "duration": "2022-12-12T00:00:00-03:00",
       "severity": "information"
     },
     {
       "id": 3,
-      "startTime": "2022-12-14T00:00:00-03:00",
+      "startTime": "2022-12-13T00:00:00-03:00",
       "clearTime": "2022-12-17T00:00:00-02:54",
       "status": false,
-      "host": "Proxy server 2019",
+      "host": "CentOS 7",
       "problemDescription": "Temperature above recommended",
-      "duration": "2022-12-14T00:00:00-03:00",
+      "duration": "2022-12-13T00:00:00-03:00",
       "severity": "not classified"
     },
     {
       "id": 4,
-      "startTime": "2022-12-14T00:00:00-03:00",
+      "startTime": "2022-12-13T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "FTP server 2017",
+      "host": "Alvorada",
       "problemDescription": "Storage hardware unavailable",
-      "duration": "2022-12-14T00:00:00-03:00",
+      "duration": "2022-12-12T00:00:00-03:00",
       "severity": "warning"
     },
     {
       "id": 5,
-      "startTime": "2022-12-14T00:00:00-03:00",
+      "startTime": "2022-12-13T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "Application server",
+      "host": "Oracle",
       "problemDescription": "Host disconnected",
-      "duration": "2022-12-14T00:00:00-03:00",
+      "duration": "2022-12-13T00:00:00-03:00",
       "severity": "average"
     }
   ],
@@ -61,50 +61,50 @@
     {
       "id": 1,
       "host": "Aldeota",
-      "usageCpuPercent": 86.97,
-      "usageMemoryPercent": 85.46,
+      "usageCpuPercent": 0.8697,
+      "usageMemoryPercent": 0.8546,
       "startTime": "2022-12-13T00:00:00-03:00"
     },
     {
       "id": 2,
       "host": "Boa vista",
-      "usageCpuPercent": 79.43,
-      "usageMemoryPercent": 40.35,
+      "usageCpuPercent": 0.7943,
+      "usageMemoryPercent": 0.4035,
       "startTime": "2022-12-13T00:00:00-03:00"
     },
     {
       "id": 3,
       "host": "Bras",
-      "usageCpuPercent": 46.89,
-      "usageMemoryPercent": 94.12,
+      "usageCpuPercent": 0.4689,
+      "usageMemoryPercent": 0.9412,
       "startTime": "2022-12-01T00:00:00-03:00"
     },
     {
       "id": 4,
       "host": "Santa Teresa",
-      "usageCpuPercent": 83.02,
-      "usageMemoryPercent": 14.67,
+      "usageCpuPercent": 0.8302,
+      "usageMemoryPercent": 0.1467,
       "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 5,
       "host": "Linux Bingen",
       "usageCpuPercent": 0.2309,
-      "usageMemoryPercent": 88.49,
+      "usageMemoryPercent": 0.8849,
       "startTime": "2022-12-11T00:00:00-03:00"
     },
     {
       "id": 6,
       "host": "PrometeusAPP-BOT01",
-      "usageCpuPercent": 48.97,
-      "usageMemoryPercent": 80.44,
+      "usageCpuPercent": 0.4897,
+      "usageMemoryPercent": 0.8044,
       "startTime": "2022-12-10T00:00:00-03:00"
     },
     {
       "id": 7,
       "host": "Bolandeira",
-      "usageCpuPercent": 45.97,
-      "usageMemoryPercent": 96.464,
+      "usageCpuPercent": 0.4597,
+      "usageMemoryPercent": 0.9664,
       "startTime": "2022-12-07T02:10:00-03:00"
     }
   ],
@@ -118,28 +118,28 @@
     },
     {
       "date": "2022-12-13T00:15:00-03:00",
-      "ateCinquenta": 41,
+      "ateCinquenta": 40,
       "ateSetentaECinco": 7,
       "ateNoventa": 1,
       "ateCem": 0
     },
     {
       "date": "2022-12-13T00:30:00-03:00",
-      "ateCinquenta": 40,
+      "ateCinquenta": 39,
       "ateSetentaECinco": 8,
       "ateNoventa": 1,
       "ateCem": 0
     },
     {
       "date": "2022-12-13T00:45:00-03:00",
-      "ateCinquenta": 42,
+      "ateCinquenta": 41,
       "ateSetentaECinco": 6,
       "ateNoventa": 1,
       "ateCem": 0
     },
     {
       "date": "2022-12-13T01:00:00-03:00",
-      "ateCinquenta": 38,
+      "ateCinquenta": 37,
       "ateSetentaECinco": 10,
       "ateNoventa": 1,
       "ateCem": 0
@@ -147,14 +147,14 @@
     {
       "date": "2022-12-13T01:15:00-03:00",
       "ateCinquenta": 39,
-      "ateSetentaECinco": 9,
+      "ateSetentaECinco": 8,
       "ateNoventa": 1,
       "ateCem": 0
     }
     ,
     {
       "date": "2022-12-18T01:30:00-03:00",
-      "ateCinquenta": 39,
+      "ateCinquenta": 38,
       "ateSetentaECinco": 9,
       "ateNoventa": 1,
       "ateCem": 0
@@ -170,25 +170,19 @@
     {
       "id": 1,
       "groupName": "DB",
-      "hostQuantity": 2,
+      "hostQuantity": 4,
       "priority": "high"
     },
     {
-      "id": 2,
-      "groupName": "DNS",
-      "hostQuantity": 2,
-      "priority": "Medium"
-    },
-    {
       "id": 3,
-      "groupName": "Application",
-      "hostQuantity": 2,
+      "groupName": "Plataforma",
+      "hostQuantity": 18,
       "priority": "high"
     },
     {
       "id": 4,
-      "groupName": "Prometheus",
-      "hostQuantity": 2,
+      "groupName": "Hosts",
+      "hostQuantity": 50,
       "priority": "Low"
     }
   ]
