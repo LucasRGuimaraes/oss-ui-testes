@@ -1,7 +1,14 @@
 import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import { useEffect, useState } from "react";
+import { useQuery } from "react-query";
 import { api } from "../services/api";
+
+interface GroupsData {
+  groupName: String;
+  hostQuantity: Number;
+  priority: String;
+}
 
 export function GroupsProblems() {
   const columns: GridColDef[] = [
@@ -30,21 +37,34 @@ export function GroupsProblems() {
     },
   ];
 
-  const [rows, setRows] = useState([]);
+  const { data, isFetching, isError } = useQuery("groups", fetchData);
 
-  useEffect(() => {
-    api
-      .get("groups")
-      .then((response) => setRows(response.data))
-      .catch(() => console.log("A requisição falhou"));
-  }, []);
+  async function fetchData() {
+    const data = (await api.get<GroupsData[]>("groups")).data;
+    return data;
+  }
 
   return (
     <Card sx={{ height: "100%" }}>
       <CardHeader title="Groups" />
       <Divider />
       <CardContent>
-        <DataGrid rows={rows} columns={columns} pageSize={5} disableSelectionOnClick />
+        {isError || isFetching || !data || !data.length ? (
+          <Box
+            sx={{
+              p: 10,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {isError && <Typography>Unable to fetch data, please try again</Typography>}
+            {isFetching && <Typography>Fetching data...</Typography>}
+            {!isFetching && !isError && (!data || !data.length) && <Typography>No entries found!</Typography>}
+          </Box>
+        ) : (
+          <DataGrid rows={data} columns={columns} pageSize={5} disableSelectionOnClick />
+        )}
       </CardContent>
     </Card>
   );

@@ -3,88 +3,58 @@
     "id": 1,
     "totalServers": 50,
     "downServers": 1,
-    "problems": 1
+    "problems": 4
   },
   "problems": [
     {
       "id": 1,
-      "startTime": "2022-09-14T00:00:00-03:00",
+      "startTime": "2022-12-14T00:00:00-03:00",
       "clearTime": "",
       "status": true,
       "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
+      "problemDescription": "MySQL does't respond",
+      "duration": "2022-12-14T00:00:00-03:00",
       "severity": "high"
     },
     {
       "id": 2,
-      "startTime": "2022-09-14T00:00:00-03:00",
+      "startTime": "2022-12-14T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
+      "host": "File server 2020",
+      "problemDescription": "time remaining until capacity limit is reached: 80 days",
+      "duration": "2022-12-14T00:00:00-02:00",
+      "severity": "information"
     },
     {
       "id": 3,
-      "startTime": "2022-09-14T00:00:00-03:00",
-      "clearTime": "2022-09-17T00:00:00-03:00",
+      "startTime": "2022-12-14T00:00:00-03:00",
+      "clearTime": "2022-12-17T00:00:00-02:54",
       "status": false,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
+      "host": "Proxy server 2019",
+      "problemDescription": "Temperature above recommended",
+      "duration": "2022-12-14T00:00:00-03:00",
+      "severity": "not classified"
     },
     {
       "id": 4,
-      "startTime": "2022-09-14T00:00:00-03:00",
+      "startTime": "2022-12-14T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
+      "host": "FTP server 2017",
+      "problemDescription": "Processing hardware unavailable",
+      "duration": "2022-12-14T00:00:00-03:00",
+      "severity": "warning"
     },
     {
       "id": 5,
-      "startTime": "2022-09-14T00:00:00-03:00",
+      "startTime": "2022-12-14T00:00:00-03:00",
       "clearTime": "",
       "status": true,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
-    },
-    {
-      "id": 6,
-      "startTime": "2022-09-14T00:00:00-03:00",
-      "clearTime": "",
-      "status": false,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
-    },
-    {
-      "id": 7,
-      "startTime": "2022-09-14T00:00:00-03:00",
-      "clearTime": "",
-      "status": false,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
-    },
-    {
-      "id": 8,
-      "startTime": "2022-09-14T00:00:00-03:00",
-      "clearTime": "",
-      "status": true,
-      "host": "MSSQL server 2019",
-      "problemDescription": "MSSQL: Service is unavailable",
-      "duration": "2022-09-14T00:00:00-03:00",
-      "severity": "high"
+      "host": "Application server",
+      "problemDescription": "Host disconnected",
+      "duration": "2022-12-14T00:00:00-03:00",
+      "severity": "average"
     }
   ],
   "cpu-memory-usage": [
