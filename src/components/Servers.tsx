@@ -52,7 +52,7 @@ export function Servers() {
                 HOSTS
               </Typography>
             </Grid>
-            <Grid item md={6} display="flex" flexDirection="column" justifyContent="center" gap={2} color="#E90000">
+            <Grid item md={6} display="flex" flexDirection="column" justifyContent="center" gap={2} color="#E94235">
               <InfoPanel data={data.downServers} title="SERVERS DOWN" />
               <InfoPanel data={data.problems} title="PROBLEMS" />
             </Grid>

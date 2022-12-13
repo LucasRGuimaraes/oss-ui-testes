@@ -25,7 +25,7 @@ export function Problems() {
         ...item,
         startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
         clearTime: item.clearTime && moment(item.clearTime).format("DD/MM HH:mm:ss"),
-        duration: moment(item.duration).fromNow(true),
+        duration: moment(item.duration).fromNow(),
       };
     });
     return formattedDate;
@@ -47,15 +47,19 @@ export function Problems() {
       headerName: "STATUS",
       flex: 1,
       renderCell: (params: GridRenderCellParams) => {
-        return params.value ? (
+        if (params.value === "Problem") {
           <Typography color="error">
             <FiAlertTriangle /> PROBLEM
-          </Typography>
-        ) : (
+          </Typography>;
+        } else if (params.value === "Alert") {
+          <Typography color="error">
+            <FiAlertTriangle /> ALERT
+          </Typography>;
+        } else {
           <Typography color="primary">
             <FiCheckSquare /> CLEAR
-          </Typography>
-        );
+          </Typography>;
+        }
       },
     },
     {

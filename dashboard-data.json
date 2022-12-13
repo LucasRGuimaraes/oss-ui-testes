@@ -10,7 +10,7 @@
       "id": 1,
       "startTime": "2022-12-11T14:51:00-03:00",
       "clearTime": "",
-      "status": true,
+      "status": "Problem",
       "host": "Guaipa",
       "problemDescription": "Postgres does't respond",
       "duration": "2022-12-13T00:00:00-03:00",
@@ -20,7 +20,7 @@
       "id": 2,
       "startTime": "2022-12-09T23:12:05-03:00",
       "clearTime": "",
-      "status": true,
+      "status": "Alert",
       "host": "Guama",
       "problemDescription": "Time remaining until capacity limit is reached: 258 days",
       "duration": "2022-12-12T00:00:00-03:00",
@@ -30,7 +30,7 @@
       "id": 3,
       "startTime": "2022-12-12T03:12:00-03:00",
       "clearTime": "2022-12-13T00:00:00-02:54",
-      "status": false,
+      "status": "Clear",
       "host": "CentOS 7",
       "problemDescription": "Temperature above recommended",
       "duration": "2022-12-13T00:00:00-03:00",
@@ -40,7 +40,7 @@
       "id": 4,
       "startTime": "2022-12-07T00:51:00-03:00",
       "clearTime": "",
-      "status": true,
+      "status": "Problem",
       "host": "Alvorada",
       "problemDescription": "Storage hardware unavailable",
       "duration": "2022-12-12T00:00:00-03:00",
@@ -50,7 +50,7 @@
       "id": 5,
       "startTime": "2022-12-13T05:10:00-03:00",
       "clearTime": "",
-      "status": true,
+      "status": "Problem",
       "host": "Oracle",
       "problemDescription": "Host disconnected",
       "duration": "2022-12-13T00:00:00-03:00",
@@ -61,42 +61,42 @@
     {
       "id": 1,
       "host": "Aldeota",
-      "type" : "Memory",
+      "type": "Memory",
       "usagePercent": 0.8546,
       "startTime": "2022-12-13T00:00:00-03:00"
     },
     {
       "id": 2,
       "host": "Boa vista",
-      "type" : "CPU",
+      "type": "CPU",
       "usagePercent": 0.7943,
       "startTime": "2022-12-13T00:00:00-03:00"
     },
     {
       "id": 3,
       "host": "Bras",
-      "type" : "Memory",
+      "type": "Memory",
       "usagePercent": 0.9412,
       "startTime": "2022-12-01T00:00:00-03:00"
     },
     {
       "id": 4,
       "host": "Santa Teresa",
-      "type" : "CPU",
+      "type": "CPU",
       "usagePercent": 0.8302,
       "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 5,
       "host": "Linux Bingen",
-      "type" : "Memory",
+      "type": "Memory",
       "usagePercent": 0.8849,
       "startTime": "2022-12-11T00:00:00-03:00"
     },
     {
       "id": 6,
       "host": "PrometeusAPP-BOT01",
-      "type" : "Memory",
+      "type": "Memory",
       "usagePercent": 0.8044,
       "startTime": "2022-12-10T00:00:00-03:00"
     },
@@ -173,16 +173,16 @@
       "priority": "high"
     },
     {
-      "id": 3,
-      "groupName": "Plataforma",
-      "hostQuantity": 18,
-      "priority": "high"
-    },
-    {
       "id": 4,
       "groupName": "Hosts",
       "hostQuantity": 50,
       "priority": "Low"
+    },
+    {
+      "id": 3,
+      "groupName": "Plataforma",
+      "hostQuantity": 18,
+      "priority": "high"
     }
   ]
 }

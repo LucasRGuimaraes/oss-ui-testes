@@ -70,8 +70,8 @@ export function DiscPartitionUsage() {
                   <Tooltip />
                   <Area type="monotone" dataKey="ateCinquenta" stroke="#0082e5" fill="#0082e5 " fillOpacity={0.8} stackId="1" name="until 50%" />
                   <Area type="monotone" dataKey="ateSetentaECinco" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="until 75%" />
-                  <Area type="monotone" dataKey="ateNoventa" stroke="#ffaa00" fill="#ffaa00" fillOpacity={0.8} stackId="1" name="until 90%" />
-                  <Area type="monotone" dataKey="ateCem" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="until 100%" />
+                  <Area type="monotone" dataKey="ateNoventa" stroke="#FABB05" fill="#FABB05" fillOpacity={0.8} stackId="1" name="until 90%" />
+                  <Area type="monotone" dataKey="ateCem" stroke="#E94235" fill="#E94235" fillOpacity={0.8} stackId="1" name="until 100%" />
                   <Legend />
                 </AreaChart>
               </ResponsiveContainer>
@@ -83,7 +83,7 @@ export function DiscPartitionUsage() {
               </Item>
             </Grid>
             <Grid item xs={6}>
-              <Item sx={{ backgroundColor: "#F40101", color: "#ffffff" }}>
+              <Item sx={{ backgroundColor: "#E94235", color: "#ffffff" }}>
                 <Typography variant="h4">1 Host</Typography>
                 <Typography>With unexpected growth.</Typography>
               </Item>

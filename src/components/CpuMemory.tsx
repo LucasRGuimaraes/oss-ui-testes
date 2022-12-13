@@ -52,9 +52,8 @@ export function CpuMemory() {
           (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
           (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
         ) {
-          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
-        
       },
     },
     {
@@ -66,9 +65,8 @@ export function CpuMemory() {
           (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
           (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
         ) {
-          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
-        
       },
     },
     {
@@ -80,9 +78,8 @@ export function CpuMemory() {
           (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
           (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
         ) {
-          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
-        
       },
     },
     {
@@ -94,9 +91,8 @@ export function CpuMemory() {
           (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
           (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
         ) {
-          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
-        
       },
     },
   ];
@@ -124,8 +120,8 @@ export function CpuMemory() {
             sx={{
               maxHeight: 275,
               width: "100%",
-              "& .red": { bgcolor: "red", color: "white" },
-              "& .red:hover": { bgcolor: "red", filter: "brightness(0.8)" },
+              "& .red": { bgcolor: "#E94235", color: "white" },
+              "& .red:hover": { bgcolor: "#E94235", filter: "brightness(0.8)" },
             }}
             getRowId={() => Math.random()}
             density="compact"

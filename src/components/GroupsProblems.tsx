@@ -17,7 +17,7 @@ export function GroupsProblems() {
       headerName: "NAME",
       flex: 1,
       renderCell: (params) => {
-        if (params.row.groupName === "DataBase") {
+        if (params.row.groupName === "DataBase" || params.row.groupName === "Hosts") {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
       },
@@ -27,7 +27,7 @@ export function GroupsProblems() {
       headerName: "PRIORITY",
       flex: 1,
       renderCell: (params) => {
-        if (params.row.groupName === "DataBase") {
+        if (params.row.groupName === "DataBase" || params.row.groupName === "Hosts") {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
       },
@@ -38,7 +38,7 @@ export function GroupsProblems() {
       type: "number",
       flex: 1,
       renderCell: (params) => {
-        if (params.row.groupName === "DataBase") {
+        if (params.row.groupName === "DataBase" || params.row.groupName === "Hosts") {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
       },
@@ -75,8 +75,8 @@ export function GroupsProblems() {
             sx={{
               maxHeight: 275,
               width: "100%",
-              "& .red": { bgcolor: "red", color: "white" },
-              "& .red:hover": { bgcolor: "red", filter: "brightness(0.8)" },
+              "& .red": { bgcolor: "#E94235", color: "white" },
+              "& .red:hover": { bgcolor: "#E94235", filter: "brightness(0.8)" },
             }}
             getRowId={() => Math.random()}
             density="compact"
@@ -87,7 +87,7 @@ export function GroupsProblems() {
             columns={columns}
             rows={data}
             getRowClassName={(params) => {
-              if (params.row.groupName === "DataBase") {
+              if (params.row.groupName === "DataBase" || params.row.groupName === "Hosts") {
                 return "red";
               }
               return "";
