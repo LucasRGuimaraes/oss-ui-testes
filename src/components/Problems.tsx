@@ -21,13 +21,23 @@ export function Problems() {
   async function fetchData() {
     const data = (await api.get<ProblemData[]>("/problems")).data;
     const formattedDate = data.map((item) => {
-      return {
-        ...item,
-        startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
-        clearTime: item.clearTime && moment(item.clearTime).format("DD/MM HH:mm:ss"),
-        duration: moment(item.duration).fromNow(),
-      };
+      if (item.clearTime) {
+        return {
+          ...item,
+          startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
+          clearTime: item.clearTime && moment(item.clearTime).format("DD/MM HH:mm:ss"),
+          duration: moment(moment(item.startTime)).from(moment(item.clearTime), true),
+        };
+      } else {
+        return {
+          ...item,
+          startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
+          clearTime: item.clearTime && moment(item.clearTime).format("DD/MM HH:mm:ss"),
+          duration: moment(item.startTime).fromNow(true),
+        };
+      }
     });
+
     return formattedDate;
   }
 
