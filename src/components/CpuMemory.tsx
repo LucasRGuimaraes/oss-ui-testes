@@ -47,21 +47,57 @@ export function CpuMemory() {
       field: "host",
       headerName: "HOST",
       flex: 1,
+      renderCell: (params) => {
+        if (
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
+          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+        ) {
+          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+        }
+        
+      },
     },
     {
       field: "type",
       headerName: "TYPE",
       flex: 1,
+      renderCell: (params) => {
+        if (
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
+          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+        ) {
+          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+        }
+        
+      },
     },
     {
       field: "usagePercent",
       headerName: "USAGE %",
       flex: 1,
+      renderCell: (params) => {
+        if (
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
+          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+        ) {
+          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+        }
+        
+      },
     },
     {
       field: "duration",
       headerName: "DURATION",
       flex: 1,
+      renderCell: (params) => {
+        if (
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
+          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+        ) {
+          return <Typography sx={{ color: "#FFFF"}}>{params.value}</Typography>;
+        }
+        
+      },
     },
   ];
 
