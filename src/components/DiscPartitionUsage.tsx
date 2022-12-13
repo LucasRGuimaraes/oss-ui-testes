@@ -1,4 +1,5 @@
-import { Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
+import { Card, CardContent, CardHeader, Divider, Grid, styled, Typography } from "@mui/material";
+import Paper from "@mui/material/Paper";
 import { Box } from "@mui/system";
 import moment from "moment";
 import { useQuery } from "react-query";
@@ -12,6 +13,14 @@ interface DiscPartitionUsageData {
   ateNoventa: Number;
   ateCem: Number;
 }
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
 
 export function DiscPartitionUsage() {
   const { data, isFetching, isError } = useQuery("discPartitionUsage", fetchData);
@@ -43,27 +52,43 @@ export function DiscPartitionUsage() {
             {!isFetching && !isError && (!data || !data.length) && <Typography>No entries found!</Typography>}
           </Box>
         ) : (
-          <ResponsiveContainer width="100%" height="100%" minHeight={150} maxHeight={200}>
-            <AreaChart
-              data={data}
-              margin={{
-                top: 0,
-                bottom: 0,
-                left: 0,
-                right: 0,
-              }}
-            >
-              <XAxis dataKey="date" />
-              <YAxis />
-              <CartesianGrid strokeDasharray="3 3" />
-              <Tooltip />
-              <Area type="monotone" dataKey="ateCinquenta" stroke="#71E571" fill="#71E571 " fillOpacity={0.8} stackId="1" name="Até 50%" />
-              <Area type="monotone" dataKey="ateSetentaECinco" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="Até 75%" />
-              <Area type="monotone" dataKey="ateNoventa" stroke="#F64A00" fill="#F64A00" fillOpacity={0.8} stackId="1" name="Até 90%" />
-              <Area type="monotone" dataKey="ateCem" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="Até 100%" />
-              <Legend />
-            </AreaChart>
-          </ResponsiveContainer>
+          <Grid container alignItems="stretch" spacing={2}>
+            <Grid item xs={12}>
+              <ResponsiveContainer width="100%" height="100%" minHeight={150} maxHeight={200}>
+                <AreaChart
+                  data={data}
+                  margin={{
+                    top: 0,
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                  }}
+                >
+                  <XAxis dataKey="date" />
+                  <YAxis />
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <Tooltip />
+                  <Area type="monotone" dataKey="ateCinquenta" stroke="#0082e5" fill="#0082e5 " fillOpacity={0.8} stackId="1" name="Até 50%" />
+                  <Area type="monotone" dataKey="ateSetentaECinco" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="Até 75%" />
+                  <Area type="monotone" dataKey="ateNoventa" stroke="#ffaa00" fill="#ffaa00" fillOpacity={0.8} stackId="1" name="Até 90%" />
+                  <Area type="monotone" dataKey="ateCem" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="Até 100%" />
+                  <Legend />
+                </AreaChart>
+              </ResponsiveContainer>
+            </Grid>
+            <Grid item xs={6}>
+              <Item>
+                <Typography variant="h4">258 Days</Typography>
+                <Typography>Estimated to fill the disk</Typography>
+              </Item>
+            </Grid>
+            <Grid item xs={6}>
+              <Item>
+                <Typography variant="h4">1 Host</Typography>
+                <Typography>With unexpected growth</Typography>
+              </Item>
+            </Grid>
+          </Grid>
         )}
       </CardContent>
     </Card>

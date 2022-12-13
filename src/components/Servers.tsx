@@ -1,4 +1,5 @@
 import { Box, Card, CardContent, CardHeader, Divider, Grid, Typography } from "@mui/material";
+import { Server } from "http";
 import { useState } from "react";
 import { FaCircle, FaDatabase } from "react-icons/fa";
 import { useQuery } from "react-query";
@@ -21,28 +22,13 @@ type textColorType = "#1f993e" | "#EFC41A" | "#ed6161";
 export function Servers() {
   const { data, isFetching, isError } = useQuery("servers", fetchData);
 
-  const [imgUrl, setImgUrl] = useState<imgUrlType>("/servers-ok.svg");
-  const [textColor, setTextColor] = useState<textColorType>("#1f993e");
-
   async function fetchData() {
     const data = (await api.get<ServersData>("/servers")).data;
-
-    if (data.problems) {
-      setImgUrl("/servers-error.svg");
-      setTextColor("#ed6161");
-    } else if (data.downServers) {
-      setImgUrl("/servers-alert.svg");
-      setTextColor("#EFC41A");
-    } else {
-      setImgUrl("/servers-ok.svg");
-      setTextColor("#1f993e");
-    }
-
     return data;
   }
 
   return (
-    <Card sx={{ height: "100%" }}>
+    <Card sx={{ maxHeight: "100%" }}>
       <CardHeader title="Servers" />
       <Divider />
       <CardContent sx={{ display: "flex" }}>
@@ -62,8 +48,8 @@ export function Servers() {
           </Box>
         ) : (
           <Grid container alignItems="stretch" spacing={2} padding={2}>
-            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color={textColor}>
-              <img src={imgUrl} alt="Image Server" style={{ maxHeight: "100px", marginTop: "16px" }} />
+            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="#0082e5">
+              <img src="server.png" alt="Image Server" style={{ maxHeight: "120px", marginTop: "16px" }} />
               <Typography variant="h1" mt={2} fontFamily="monospace">
                 {data?.totalServers}
               </Typography>
@@ -71,7 +57,7 @@ export function Servers() {
                 <FaCircle /> ONLINE
               </Typography>
             </Box>
-            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={3} color={textColor}>
+            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={3} color="#E90000">
               <InfoPanel data={data.downServers} title="SERVERS DOWN" />
               <InfoPanel data={data.problems} title="PROBLEMS" />
             </Box>

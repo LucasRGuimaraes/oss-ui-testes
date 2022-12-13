@@ -4,6 +4,8 @@ import moment from "moment";
 import { useQuery } from "react-query";
 import { api } from "../services/api";
 
+import { formatPercentage } from "../utils/formatNumber";
+
 interface cpuMemoryUsageData {
   host: String;
   usageCpuPercent: Number;
@@ -15,12 +17,14 @@ export function CpuMemory() {
   const { data, isFetching, isError } = useQuery("cpuMemoryUsage", fetchData);
 
   async function fetchData() {
-    const data = (await api.get<cpuMemoryUsageData[]>("/cpu-memory-usage")).data;
+    const data = (await api.get<cpuMemoryUsageData[]>("/cpu-memory-usage?_sort=usageCpuPercent&_order=desc")).data;
     const formattedDate = data.map((item) => {
       return {
         ...item,
         startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
         duration: moment(item.startTime).fromNow(true),
+        usageCpuPercent: formatPercentage(item.usageCpuPercent),
+        usageMemoryPercent: formatPercentage(item.usageMemoryPercent),
       };
     });
     return formattedDate;
@@ -34,12 +38,12 @@ export function CpuMemory() {
     },
     {
       field: "usageCpuPercent",
-      headerName: "USAGE CPU %",
+      headerName: "CPU %",
       flex: 1,
     },
     {
       field: "usageMemoryPercent",
-      headerName: "USAGE MEMORY %",
+      headerName: "MEMORY %",
       flex: 1,
     },
     {
@@ -51,9 +55,7 @@ export function CpuMemory() {
 
   return (
     <Card sx={{ height: "100%" }}>
-      <CardHeader>
-        <Typography>CPU / MEM</Typography>
-      </CardHeader>
+      <CardHeader title={`CPU | MEM `} />
       <Divider />
       <CardContent>
         {isError || isFetching || !data || !data.length ? (
