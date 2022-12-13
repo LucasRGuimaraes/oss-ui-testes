@@ -77,7 +77,7 @@ export function DiscPartitionUsage() {
               </ResponsiveContainer>
             </Grid>
             <Grid item xs={6}>
-              <Item>
+              <Item sx={{backgroundColor: "#FABB05"}}>
                 <Typography variant="h4">258 Days</Typography>
                 <Typography>Estimated to fill the disk</Typography>
               </Item>

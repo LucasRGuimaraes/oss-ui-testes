@@ -49,8 +49,7 @@ export function CpuMemory() {
       flex: 1,
       renderCell: (params) => {
         if (
-          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
-          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) 
         ) {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
@@ -62,8 +61,7 @@ export function CpuMemory() {
       flex: 1,
       renderCell: (params) => {
         if (
-          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
-          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) 
         ) {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
@@ -75,8 +73,7 @@ export function CpuMemory() {
       flex: 1,
       renderCell: (params) => {
         if (
-          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
-          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) 
         ) {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
@@ -88,8 +85,7 @@ export function CpuMemory() {
       flex: 1,
       renderCell: (params) => {
         if (
-          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
-          (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+          (params.row.type === "Memory" && params.row.percentage === topMemoryUsage)
         ) {
           return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
@@ -133,8 +129,7 @@ export function CpuMemory() {
             rows={data}
             getRowClassName={(params) => {
               if (
-                (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
-                (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+                (params.row.type === "Memory" && params.row.percentage === topMemoryUsage)
               ) {
                 return "red";
               }
