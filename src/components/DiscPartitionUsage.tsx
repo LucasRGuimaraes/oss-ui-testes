@@ -22,14 +22,6 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const ItemAlert = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#ff0000",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: "#ffffff",
-}));
-
 export function DiscPartitionUsage() {
   const { data, isFetching, isError } = useQuery("discPartitionUsage", fetchData);
 
@@ -76,10 +68,10 @@ export function DiscPartitionUsage() {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                  <Area type="monotone" dataKey="up until 50%" stroke="#0082e5" fill="#0082e5 " fillOpacity={0.8} stackId="1" name="Até 50%" />
-                  <Area type="monotone" dataKey="up until 75%" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="Até 75%" />
-                  <Area type="monotone" dataKey="up until 90%" stroke="#ffaa00" fill="#ffaa00" fillOpacity={0.8} stackId="1" name="Até 90%" />
-                  <Area type="monotone" dataKey="up until 100%" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="Até 100%" />
+                  <Area type="monotone" dataKey="ateCinquenta" stroke="#0082e5" fill="#0082e5 " fillOpacity={0.8} stackId="1" name="up until 50%" />
+                  <Area type="monotone" dataKey="ateSetentaECinco" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="up until 75%" />
+                  <Area type="monotone" dataKey="ateNoventa" stroke="#ffaa00" fill="#ffaa00" fillOpacity={0.8} stackId="1" name="up until 90%" />
+                  <Area type="monotone" dataKey="ateCem" stroke="#ff0000" fill="#ff0000" fillOpacity={0.8} stackId="1" name="up until 100%" />
                   <Legend />
                 </AreaChart>
               </ResponsiveContainer>
@@ -91,10 +83,11 @@ export function DiscPartitionUsage() {
               </Item>
             </Grid>
             <Grid item xs={6}>
-              <ItemAlert>
+              <Item sx={{backgroundColor: "#F40101"}}>
                 <Typography variant="h4">1 Host</Typography>
-                <Typography>With unexpected growth</Typography>
-              </ItemAlert>
+                <Typography>With unexpected growth.</Typography>
+                <Typography color="#FFFFFF">Hostname: Guama</Typography>
+              </Item>
             </Grid>
           </Grid>
         )}
