@@ -37,8 +37,8 @@ export function CpuMemory() {
       flex: 1,
     },
     {
-      field: "usageCpuPercent",
-      headerName: "CPU %",
+      field: "type",
+      headerName: "TYPE",
       flex: 1,
     },
     {

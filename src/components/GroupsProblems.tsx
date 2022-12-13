@@ -14,24 +14,26 @@ export function GroupsProblems() {
   const columns: GridColDef[] = [
     {
       field: "groupName",
-      headerName: "Name",
+      headerName: "NAME",
       flex: 1,
     },
     {
       field: "priority",
-      headerName: "Priority",
+      headerName: "PRIORITY",
       flex: 1,
       renderCell: (params) => {
         if (params.value == "high") {
           return <Typography sx={{ color: "red" }}>{params.value}</Typography>;
-        } else {
+        } else if (params.value === "medium") {
           return <Typography sx={{ color: "orange", borderColor: "red" }}>{params.value}</Typography>;
+        } else {
+          return <Typography sx={{ color: "green", borderColor: "red" }}>{params.value}</Typography>;
         }
       },
     },
     {
       field: "hostQuantity",
-      headerName: "Hosts Quantity",
+      headerName: "HOSTS QUANTITY",
       type: "number",
       flex: 1,
     },

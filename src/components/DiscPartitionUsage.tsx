@@ -83,10 +83,9 @@ export function DiscPartitionUsage() {
               </Item>
             </Grid>
             <Grid item xs={6}>
-              <Item sx={{backgroundColor: "#F40101"}}>
+              <Item sx={{ backgroundColor: "#F40101", color: "#ffffff" }}>
                 <Typography variant="h4">1 Host</Typography>
                 <Typography>With unexpected growth.</Typography>
-                <Typography color="#FFFFFF">Hostname: Guama</Typography>
               </Item>
             </Grid>
           </Grid>
