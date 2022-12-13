@@ -176,13 +176,13 @@
     {
       "id": 3,
       "groupName": "Plataforma",
-      "hostQuantity": 8,
+      "hostQuantity": 18,
       "priority": "high"
     },
     {
       "id": 4,
       "groupName": "Hosts",
-      "hostQuantity": 38,
+      "hostQuantity": 50,
       "priority": "Low"
     }
   ]
