@@ -97,9 +97,6 @@ export function CpuMemory() {
             pageSize={10}
             columns={columns}
             rows={data}
-            getRowClassName={(params) => {
-              params.row.usagePercent;
-            }}
           />
         )}
       </CardContent>
