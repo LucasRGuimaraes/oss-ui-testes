@@ -61,50 +61,50 @@
     {
       "id": 1,
       "host": "Aldeota",
-      "usageCpuPercent": 0.8697,
-      "usageMemoryPercent": 0.8546,
+      "type" : "Memory",
+      "usagePercent": 0.8546,
       "startTime": "2022-12-13T00:00:00-03:00"
     },
     {
       "id": 2,
       "host": "Boa vista",
-      "usageCpuPercent": 0.7943,
-      "usageMemoryPercent": 0.4035,
+      "type" : "CPU",
+      "usagePercent": 0.7943,
       "startTime": "2022-12-13T00:00:00-03:00"
     },
     {
       "id": 3,
       "host": "Bras",
-      "usageCpuPercent": 0.4689,
-      "usageMemoryPercent": 0.9412,
+      "type" : "Memory",
+      "usagePercent": 0.9412,
       "startTime": "2022-12-01T00:00:00-03:00"
     },
     {
       "id": 4,
       "host": "Santa Teresa",
-      "usageCpuPercent": 0.8302,
-      "usageMemoryPercent": 0.1467,
+      "type" : "CPU",
+      "usagePercent": 0.8302,
       "startTime": "2022-12-09T00:00:00-03:00"
     },
     {
       "id": 5,
       "host": "Linux Bingen",
-      "usageCpuPercent": 0.2309,
-      "usageMemoryPercent": 0.8849,
+      "type" : "Memory",
+      "usagePercent": 0.8849,
       "startTime": "2022-12-11T00:00:00-03:00"
     },
     {
       "id": 6,
       "host": "PrometeusAPP-BOT01",
-      "usageCpuPercent": 0.4897,
-      "usageMemoryPercent": 0.8044,
+      "type" : "Memory",
+      "usagePercent": 0.8044,
       "startTime": "2022-12-10T00:00:00-03:00"
     },
     {
       "id": 7,
       "host": "Bolandeira",
-      "usageCpuPercent": 0.4597,
-      "usageMemoryPercent": 0.9664,
+      "type": "CPU",
+      "usagePercent": 0.9646,
       "startTime": "2022-12-07T02:10:00-03:00"
     }
   ],
@@ -150,8 +150,7 @@
       "ateSetentaECinco": 8,
       "ateNoventa": 1,
       "ateCem": 0
-    }
-    ,
+    },
     {
       "date": "2022-12-18T01:30:00-03:00",
       "ateCinquenta": 38,
