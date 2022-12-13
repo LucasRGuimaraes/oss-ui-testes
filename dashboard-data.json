@@ -3,7 +3,7 @@
     "id": 1,
     "totalServers": 50,
     "downServers": 1,
-    "problems": 4
+    "problems": 3
   },
   "problems": [
     {
@@ -12,7 +12,7 @@
       "clearTime": "",
       "status": "Problem",
       "host": "Guaipa",
-      "problemDescription": "Postgres does't respond",
+      "problemDescription": "Postgres with unexpected growth",
       "duration": "2022-12-13T00:00:00-03:00",
       "severity": "high"
     },
@@ -41,8 +41,8 @@
       "startTime": "2022-12-07T00:51:00-03:00",
       "clearTime": "",
       "status": "Problem",
-      "host": "Alvorada",
-      "problemDescription": "Storage hardware unavailable",
+      "host": "Bras",
+      "problemDescription": "Memory usage is high",
       "duration": "2022-12-12T00:00:00-03:00",
       "severity": "warning"
     },
@@ -104,7 +104,7 @@
       "id": 7,
       "host": "Bolandeira",
       "type": "CPU",
-      "usagePercent": 0.9646,
+      "usagePercent": 0.7346,
       "startTime": "2022-12-07T02:10:00-03:00"
     }
   ],
