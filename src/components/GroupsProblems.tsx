@@ -16,18 +16,19 @@ export function GroupsProblems() {
       field: "groupName",
       headerName: "NAME",
       flex: 1,
+      renderCell: (params) => {
+        if (params.row.groupName === "DataBase") {
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
+        }
+      },
     },
     {
       field: "priority",
       headerName: "PRIORITY",
       flex: 1,
       renderCell: (params) => {
-        if (params.value == "high") {
-          return <Typography sx={{ color: "red" }}>{params.value}</Typography>;
-        } else if (params.value === "medium") {
-          return <Typography sx={{ color: "orange", borderColor: "red" }}>{params.value}</Typography>;
-        } else {
-          return <Typography sx={{ color: "green", borderColor: "red" }}>{params.value}</Typography>;
+        if (params.row.groupName === "DataBase") {
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
         }
       },
     },
@@ -36,6 +37,11 @@ export function GroupsProblems() {
       headerName: "HOSTS QUANTITY",
       type: "number",
       flex: 1,
+      renderCell: (params) => {
+        if (params.row.groupName === "DataBase") {
+          return <Typography sx={{ color: "#FFFF" }}>{params.value}</Typography>;
+        }
+      },
     },
   ];
 
@@ -66,7 +72,12 @@ export function GroupsProblems() {
           </Box>
         ) : (
           <DataGrid
-            sx={{ maxHeight: 275, width: "100%" }}
+            sx={{
+              maxHeight: 275,
+              width: "100%",
+              "& .red": { bgcolor: "red", color: "white" },
+              "& .red:hover": { bgcolor: "red", filter: "brightness(0.8)" },
+            }}
             getRowId={() => Math.random()}
             density="compact"
             disableColumnMenu
@@ -75,6 +86,12 @@ export function GroupsProblems() {
             pageSize={10}
             columns={columns}
             rows={data}
+            getRowClassName={(params) => {
+              if (params.row.groupName === "DataBase") {
+                return "red";
+              }
+              return "";
+            }}
           />
         )}
       </CardContent>
