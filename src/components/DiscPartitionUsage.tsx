@@ -68,8 +68,8 @@ export function DiscPartitionUsage() {
                   <YAxis />
                   <CartesianGrid strokeDasharray="3 3" />
                   <Tooltip />
-                  <Area type="monotone" dataKey="ateCinquenta" stroke="#0082e5" fill="#0082e5 " fillOpacity={0.8} stackId="1" name="until 50%" />
-                  <Area type="monotone" dataKey="ateSetentaECinco" stroke="#008000" fill="#008000" fillOpacity={0.8} stackId="1" name="until 75%" />
+                  <Area type="monotone" dataKey="ateCinquenta" stroke="#4285F4" fill="#4285F4" fillOpacity={0.8} stackId="1" name="until 50%" />
+                  <Area type="monotone" dataKey="ateSetentaECinco" stroke="#34A853" fill="#34A853" fillOpacity={0.8} stackId="1" name="until 75%" />
                   <Area type="monotone" dataKey="ateNoventa" stroke="#FABB05" fill="#FABB05" fillOpacity={0.8} stackId="1" name="until 90%" />
                   <Area type="monotone" dataKey="ateCem" stroke="#E94235" fill="#E94235" fillOpacity={0.8} stackId="1" name="until 100%" />
                   <Legend />
@@ -77,7 +77,7 @@ export function DiscPartitionUsage() {
               </ResponsiveContainer>
             </Grid>
             <Grid item xs={6}>
-              <Item sx={{backgroundColor: "#FABB05"}}>
+              <Item sx={{ backgroundColor: "#FABB05", color: "#ffffff" }}>
                 <Typography variant="h4">258 Days</Typography>
                 <Typography>Estimated to fill the disk</Typography>
               </Item>

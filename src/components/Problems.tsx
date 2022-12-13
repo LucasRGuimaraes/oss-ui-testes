@@ -8,7 +8,7 @@ import moment from "moment";
 interface ProblemData {
   startTime: Date;
   clearTime?: Date;
-  status: Boolean;
+  status: String;
   host: String;
   problemDescription: String;
   duration: Date;
@@ -46,19 +46,25 @@ export function Problems() {
       field: "status",
       headerName: "STATUS",
       flex: 1,
-      renderCell: (params: GridRenderCellParams) => {
+      renderCell: (params) => {
         if (params.value === "Problem") {
-          <Typography color="error">
-            <FiAlertTriangle /> PROBLEM
-          </Typography>;
+          return (
+            <Typography color="#E94235">
+              <FiAlertTriangle /> {params.value}
+            </Typography>
+          );
         } else if (params.value === "Alert") {
-          <Typography color="error">
-            <FiAlertTriangle /> ALERT
-          </Typography>;
+          return (
+            <Typography color="#FABB05">
+              <FiAlertTriangle /> {params.value}
+            </Typography>
+          );
         } else {
-          <Typography color="primary">
-            <FiCheckSquare /> CLEAR
-          </Typography>;
+          return (
+            <Typography color="#34A853">
+              <FiCheckSquare /> {params.value}
+            </Typography>
+          );
         }
       },
     },
