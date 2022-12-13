@@ -22,6 +22,14 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const ItemAlert = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#ff0000",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "center",
+  color: "#ffffff",
+}));
+
 export function DiscPartitionUsage() {
   const { data, isFetching, isError } = useQuery("discPartitionUsage", fetchData);
 
@@ -83,10 +91,10 @@ export function DiscPartitionUsage() {
               </Item>
             </Grid>
             <Grid item xs={6}>
-              <Item>
+              <ItemAlert>
                 <Typography variant="h4">1 Host</Typography>
                 <Typography>With unexpected growth</Typography>
-              </Item>
+              </ItemAlert>
             </Grid>
           </Grid>
         )}

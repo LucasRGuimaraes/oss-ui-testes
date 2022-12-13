@@ -82,16 +82,17 @@ export function Problems() {
         // @ts-ignore
         <GridActionsCellItem
           key={1}
-          icon={<FiEdit color="green" />}
+          icon={<FiEdit color="#660099" />}
           label="Edit"
           onClick={() => {
             console.log("oi");
           }}
+          showInMenu
         />,
         // @ts-ignore
         <GridActionsCellItem
           key={2}
-          icon={<FiTrash2 color="green" />}
+          icon={<FiTrash2 color="#660099" />}
           label="Delete"
           onClick={() => {
             console.log("oi");

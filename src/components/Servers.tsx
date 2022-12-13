@@ -48,19 +48,19 @@ export function Servers() {
           </Box>
         ) : (
           <Grid container alignItems="stretch" spacing={2} padding={2}>
-            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="#0082e5">
-              <img src="server.png" alt="Image Server" style={{ maxHeight: "120px", marginTop: "16px" }} />
-              <Typography variant="h1" mt={2} fontFamily="monospace">
+            <Grid item md={6} display="flex" flexDirection="column" justifyContent="center" alignItems="center" color="#660099">
+              <img src="server.png" alt="Image Server" style={{ maxHeight: "120px" }} />
+              <Typography variant="h1" mt={1} fontFamily="monospace">
                 {data?.totalServers}
               </Typography>
-              <Typography variant="h5" fontWeight="500" display="flex" alignItems="center" gap={1}>
+              <Typography variant="h6" display="flex" alignItems="center" gap={1}>
                 <FaCircle /> ONLINE
               </Typography>
-            </Box>
-            <Box width="50%" display="flex" flexDirection="column" justifyContent="center" gap={3} color="#E90000">
+            </Grid>
+            <Grid item md={6} display="flex" flexDirection="column" justifyContent="center" gap={2} color="#E90000">
               <InfoPanel data={data.downServers} title="SERVERS DOWN" />
               <InfoPanel data={data.problems} title="PROBLEMS" />
-            </Box>
+            </Grid>
           </Grid>
         )}
       </CardContent>
@@ -74,7 +74,7 @@ function InfoPanel({ data, title }: generatePanelData) {
       <Typography variant="h1" fontFamily="monospace">
         {data}
       </Typography>
-      <Typography variant="h5" fontWeight="500">
+      <Typography variant="h6" fontWeight="500">
         {title}
       </Typography>
     </Box>

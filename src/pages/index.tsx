@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Grid container alignItems="stretch" spacing={2} pt={10} paddingX={2}>
+      <Grid container alignItems="stretch" spacing={2} pt={10} pb={6} paddingX={2}>
         <Grid item md={4} sm={6} xs={12}>
           <Servers />
         </Grid>

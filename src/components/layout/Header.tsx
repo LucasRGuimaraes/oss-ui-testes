@@ -18,7 +18,7 @@ export default function MyAppBar() {
         <Box sx={{ flexGrow: 1, ml: 2 }} />
         <Box>
           <Alert />
-          <Button variant="text" color="white">
+          <Button variant="text" color="white" sx={{ marginLeft: 1 }}>
             <FiLogOut size={20} />
             <Typography sx={{ ml: 1 }}>Logout</Typography>
           </Button>
