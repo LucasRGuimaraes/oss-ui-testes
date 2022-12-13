@@ -1,6 +1,4 @@
 import { Box, Card, CardContent, CardHeader, Divider, Grid, Typography } from "@mui/material";
-import { Server } from "http";
-import { useState } from "react";
 import { FaCircle, FaDatabase } from "react-icons/fa";
 import { useQuery } from "react-query";
 import { api } from "../services/api";
@@ -15,9 +13,6 @@ interface generatePanelData {
   data: Number;
   title: String;
 }
-
-type imgUrlType = "/servers-error.svg" | "/servers-alert.svg" | "/servers-ok.svg";
-type textColorType = "#1f993e" | "#EFC41A" | "#ed6161";
 
 export function Servers() {
   const { data, isFetching, isError } = useQuery("servers", fetchData);
@@ -54,7 +49,7 @@ export function Servers() {
                 {data?.totalServers}
               </Typography>
               <Typography variant="h6" display="flex" alignItems="center" gap={1}>
-                <FaCircle /> HOSTS
+                HOSTS
               </Typography>
             </Grid>
             <Grid item md={6} display="flex" flexDirection="column" justifyContent="center" gap={2} color="#E90000">

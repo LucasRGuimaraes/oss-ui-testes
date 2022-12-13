@@ -21,24 +21,21 @@ export function CpuMemory() {
   const [topMemoryUsage, setTopMemoryUsage] = useState<Number>(0);
 
   async function fetchData() {
-    const data = (await api.get<cpuMemoryUsageData[]>("/cpu-memory-usage?_sort=usageCpuPercent&_order=desc")).data;
+    const data = (await api.get<cpuMemoryUsageData[]>("/cpu-memory-usage?_sort=usagePercent&_order=desc")).data;
     const formattedDate = data.map((item) => {
       return {
         ...item,
         duration: moment(item.startTime).fromNow(true),
         usagePercent: formatPercentage(item.usagePercent),
+        percentage: item.usagePercent,
       };
     });
 
     data.forEach((item) => {
       if (item.type === "CPU") {
-        if (item.usagePercent > topCpuUsage) {
-          setTopCpuUsage(item.usagePercent);
-        }
+        setTopCpuUsage((current) => (current > item.usagePercent ? current : item.usagePercent));
       } else if (item.type === "Memory") {
-        if (item.usagePercent > topMemoryUsage) {
-          setTopMemoryUsage(item.usagePercent);
-        }
+        setTopMemoryUsage((current) => (current > item.usagePercent ? current : item.usagePercent));
       }
     });
 
@@ -88,7 +85,12 @@ export function CpuMemory() {
           </Box>
         ) : (
           <DataGrid
-            sx={{ maxHeight: 275, width: "100%" }}
+            sx={{
+              maxHeight: 275,
+              width: "100%",
+              "& .red": { bgcolor: "red", color: "white" },
+              "& .red:hover": { bgcolor: "red", filter: "brightness(0.8)" },
+            }}
             getRowId={() => Math.random()}
             density="compact"
             disableColumnMenu
@@ -97,6 +99,15 @@ export function CpuMemory() {
             pageSize={10}
             columns={columns}
             rows={data}
+            getRowClassName={(params) => {
+              if (
+                (params.row.type === "Memory" && params.row.percentage === topMemoryUsage) ||
+                (params.row.type === "CPU" && params.row.percentage === topCpuUsage)
+              ) {
+                return "red";
+              }
+              return "";
+            }}
           />
         )}
       </CardContent>
