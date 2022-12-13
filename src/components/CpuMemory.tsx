@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, CardHeader, Divider, Typography } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import moment from "moment";
+import { useState } from "react";
 import { useQuery } from "react-query";
 import { api } from "../services/api";
 
@@ -8,23 +9,33 @@ import { formatPercentage } from "../utils/formatNumber";
 
 interface cpuMemoryUsageData {
   host: String;
-  usageCpuPercent: Number;
-  usageMemoryPercent: Number;
+  type: String;
+  usagePercent: Number;
   startTime: Date;
 }
 
 export function CpuMemory() {
   const { data, isFetching, isError } = useQuery("cpuMemoryUsage", fetchData);
+  const [topCpuUsage, setTopCpuUsage] = useState<Number>(0);
+  const [topMemoryUsage, setTopMemoryUsage] = useState<Number>(0);
 
   async function fetchData() {
     const data = (await api.get<cpuMemoryUsageData[]>("/cpu-memory-usage?_sort=usageCpuPercent&_order=desc")).data;
     const formattedDate = data.map((item) => {
+      if (item.type === "CPU") {
+        if (item.usagePercent > topCpuUsage) {
+          setTopCpuUsage(item.usagePercent);
+        }
+      } else if (item.type === "Memory") {
+        if (item.usagePercent > topMemoryUsage) {
+          setTopMemoryUsage(item.usagePercent);
+        }
+      }
+
       return {
         ...item,
-        startTime: moment(item.startTime).format("DD/MM HH:mm:ss"),
         duration: moment(item.startTime).fromNow(true),
-        usageCpuPercent: formatPercentage(item.usageCpuPercent),
-        usageMemoryPercent: formatPercentage(item.usageMemoryPercent),
+        usagePercent: formatPercentage(item.usagePercent),
       };
     });
     return formattedDate;
@@ -42,8 +53,8 @@ export function CpuMemory() {
       flex: 1,
     },
     {
-      field: "usageMemoryPercent",
-      headerName: "MEMORY %",
+      field: "usagePercent",
+      headerName: "USAGE %",
       flex: 1,
     },
     {
@@ -55,7 +66,7 @@ export function CpuMemory() {
 
   return (
     <Card sx={{ height: "100%" }}>
-      <CardHeader title={`CPU | MEM `} />
+      <CardHeader title={`CPU ${topCpuUsage} | MEM ${topMemoryUsage}`} />
       <Divider />
       <CardContent>
         {isError || isFetching || !data || !data.length ? (

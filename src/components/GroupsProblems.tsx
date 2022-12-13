@@ -65,7 +65,17 @@ export function GroupsProblems() {
             {!isFetching && !isError && (!data || !data.length) && <Typography>No entries found!</Typography>}
           </Box>
         ) : (
-          <DataGrid rows={data} columns={columns} pageSize={5} disableSelectionOnClick />
+          <DataGrid
+            sx={{ maxHeight: 275, width: "100%" }}
+            getRowId={() => Math.random()}
+            density="compact"
+            disableColumnMenu
+            disableSelectionOnClick
+            disableDensitySelector
+            pageSize={10}
+            columns={columns}
+            rows={data}
+          />
         )}
       </CardContent>
     </Card>
